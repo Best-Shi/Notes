@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title><%- title %></title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <% nav.forEach(item => { %>
+        <div>
+          <p class="menu"><%= item.info.name %></p>
+          <ul>
+            <li>
+              <% item.children.forEach(val => { %>
+              <a class="menu-item" href="<%= val.id %>.html">
+                <%= val.info.name %>
+              </a>
+              <% }) %>
+            </li>
+          </ul>
+        </div>
+        <% }) %>
+      </div>
+      <div class="content">
+        <% if(content) { %>
+        <div><%- content %></div>
+        <% } else { %>
+        <h2>aaaa</h2>
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>
