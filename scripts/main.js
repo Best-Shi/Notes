@@ -88,9 +88,15 @@ import { execSync } from 'node:child_process';
 // }
 
 console.log('正在推送至 GitHub');
+
+const currentDate = () => {
+  return new Date().toLocaleString();
+};
 // 推送GitHub
 await execSync('git add .', { encoding: 'utf-8' });
-// await execSync(`git commit -m '自动提交: ${new Date().toLocaleString()}'`, {
-//   encoding: 'utf-8',
-// });
+const commit = `git commit -m "自动提交: ${currentDate()}"`;
+console.log(111, commit);
+await execSync(commit, {
+  encoding: 'utf-8',
+});
 // await execSync('git push', { encoding: 'utf-8' });
