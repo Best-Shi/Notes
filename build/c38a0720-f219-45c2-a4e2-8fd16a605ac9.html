@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>JavaScript异步处理</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        
+        <div>
+          <p class="menu">Git</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="3882148c-0b2c-42e5-b296-d0840ce5b1b5.html">
+                Git 学习
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">JavaScript</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="c38a0720-f219-45c2-a4e2-8fd16a605ac9.html">
+                JavaScript异步处理
+              </a>
+              
+              <a class="menu-item" href="58151af3-b4ee-4d98-910a-af2f9e539daa.html">
+                JavaScript数组
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">linux</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="ac95e51a-41a4-480b-b03d-579e6355e5fb.html">
+                ArchLinux安装美化之系统安装
+              </a>
+              
+              <a class="menu-item" href="ad70507b-6a95-4ffd-9402-b8056ac2b57b.html">
+                Linux 压缩和解压缩命令
+              </a>
+              
+              <a class="menu-item" href="d4f63889-5d89-400a-ad95-af8542bf9526.html">
+                Linux 网络配置
+              </a>
+              
+              <a class="menu-item" href="eeacbcc9-2a96-4162-8e36-8e174fe83e9c.html">
+                nvm 安装与配置
+              </a>
+              
+              <a class="menu-item" href="51285dee-d019-4bd7-9ca1-44b4c8b8cfa5.html">
+                oh-my-zsh 安装与配置
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">MongDB</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="6b088c8e-f645-40cb-88c7-f07790f14ef4.html">
+                MongoDB基本使用
+              </a>
+              
+              <a class="menu-item" href="7fba68ff-4bbe-4808-8d2f-d6eb436b3bb2.html">
+                MongoDB权限配置
+              </a>
+              
+              <a class="menu-item" href="e36a6698-e63a-4a52-8a21-4b4087aa37f2.html">
+                MongoDB进阶
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">Nginx</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="a6e365b4-cb4c-47fa-a1b5-4a0179f4ad1a.html">
+                Nginx安装
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">npm</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="d6120c83-9835-4349-9851-eb8fdc618241.html">
+                npm-workspace
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">PowerShell</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="e26e5a3f-8063-47e3-8c54-7f031b0e4da0.html">
+                PoserShell 学习
+              </a>
+              
+              <a class="menu-item" href="92c0884a-6dcd-4cae-8706-3b493f3c0ec6.html">
+                powershell 命令
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">rust</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="4c42e7ab-5b8e-401f-bb78-e02af1e43931.html">
+                Rust 基础
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">TypeScript</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="4fb7f7a9-c84b-4b5f-a9f7-a59746847cd2.html">
+                TypeScript 基本项目搭建
+              </a>
+              
+              <a class="menu-item" href="f9fd825f-3873-4bcf-98d8-0540b2ad564c.html">
+                TypeScript类型与配置笔记
+              </a>
+              
+              <a class="menu-item" href="830e7bca-c70e-46ac-bbe3-38c3fb074d31.html">
+                TypeScript面向对象笔记
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">vscode</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="8eb6cf39-0fe0-44f4-9688-ba3a78ddcb01.html">
+                vscode配置
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">vue3</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="376f3c97-98fa-4be3-8498-ad171ef47f5e.html">
+                Composition API(其它部分)
+              </a>
+              
+              <a class="menu-item" href="f952a41f-f7e7-4656-88a6-86227810f577.html">
+                Composition API(常用部分)
+              </a>
+              
+              <a class="menu-item" href="fd325294-cc0e-401a-b208-0aa020abe6c4.html">
+                Vue3 新组件
+              </a>
+              
+              <a class="menu-item" href="39684220-ebb6-4859-9ec5-cc5b281f29e2.html">
+                vue3快速上手
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">webpack</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="ae49d136-883a-44c1-95a2-0304faa72659.html">
+                vue+ts+eslint前端项目搭建
+              </a>
+              
+              <a class="menu-item" href="2909c6fc-8b52-40de-970a-b407186840c7.html">
+                webpack + vue 企业级项目搭建
+              </a>
+              
+              <a class="menu-item" href="f1aaab61-c7bd-46a3-b924-4d09f1365b3b.html">
+                webpack
+              </a>
+              
+              <a class="menu-item" href="50f1a98c-1bb2-4a66-b45f-68a5c20d2d15.html">
+                webpack配置
+              </a>
+              
+              <a class="menu-item" href="bd69632e-826e-4963-aa5c-bc637a478fa0.html">
+                前端常用
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">Windows</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="4c6ae43e-cb77-4bcd-b124-5d9445203188.html">
+                Windows Terminal设置代理
+              </a>
+              
+              <a class="menu-item" href="d46e04e5-8dcd-43cc-8550-4b30f990ac25.html">
+                Windows安装优化
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">其它</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="49e1a6ba-d046-4f4d-bfab-3822f26c63eb.html">
+                mustache模板引擎
+              </a>
+              
+              <a class="menu-item" href="88eb9688-23bc-4f31-8ce3-7059b82404b2.html">
+                双向数据绑定
+              </a>
+              
+              <a class="menu-item" href="d7f3c26e-b00c-4994-83c9-e8cece3b69bd.html">
+                抽象语法树
+              </a>
+              
+              <a class="menu-item" href="3f4ef750-bcd5-4bf8-9d93-d0e104fb3e5c.html">
+                虚拟DOM与diff算法
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">打包构建工具</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="a6cd94be-cdc2-409b-b22f-9b27174f24ac.html">
+                Grunt
+              </a>
+              
+              <a class="menu-item" href="04185fa8-85fc-4a99-9b72-4034b9bcb0a2.html">
+                Gulp
+              </a>
+              
+              <a class="menu-item" href="bf96905d-6e68-4d2a-a6b5-1622150bf8a6.html">
+                Rollup
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="content">
+        
+        <div><h1 id="javascript-异步处理方式">JavaScript 异步处理方式</h1>
+<h2 id="promise">Promise</h2>
+<p>Promise 是一个对象，它代表了一个异步操作的最终完成或者失败。</p>
+<p>一个 Promise 必然处于以下几种状态之一：</p>
+<ul>
+<li>待定（pending）: 初始状态，既没有被兑现，也没有被拒绝。</li>
+<li>完成（fulfilled）: 意味着操作成功完成。</li>
+<li>拒绝（rejected）: 意味着操作失败。</li>
+</ul>
+<p><strong>基本使用：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">let</span> p1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-title function_">resolve</span>(<span class="hljs-string">&quot;p1&quot;</span>);
+    }, <span class="hljs-number">1000</span>);
+});
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(p1);
+</code></pre>
+<h3 id="promiseall">Promise.all</h3>
+<blockquote>
+<p>当传入的 Promise 对象全部执行成功后返回成功，当传入的 Promise 对象有一个执行失败后立即返回失败。</p>
+</blockquote>
+<p><strong>语法：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">all</span>(iterable);
+</code></pre>
+<p><strong>参数说明：</strong></p>
+<ul>
+<li>iterable：一个可迭代的对象，例如 Array，其中每个成员都是 Promise。</li>
+</ul>
+<p><strong>示例：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">let</span> p1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-title function_">resolve</span>(<span class="hljs-string">&quot;p1&quot;</span>);
+    }, <span class="hljs-number">1000</span>);
+});
+
+<span class="hljs-keyword">let</span> p2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-title function_">reject</span>(<span class="hljs-string">&quot;p2&quot;</span>);
+    }, <span class="hljs-number">1500</span>);
+});
+
+<span class="hljs-keyword">let</span> p3 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-title function_">resolve</span>(<span class="hljs-string">&quot;p3&quot;</span>);
+    }, <span class="hljs-number">2000</span>);
+});
+
+<span class="hljs-keyword">let</span> res = <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">all</span>([p1, p2, p3]);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(res);
+</code></pre>
+<h3 id="promiseallsettled">Promise.allSettled</h3>
+<blockquote>
+<p>等所有传入的 Promise 都执行完后返回一个数组，数组中每个元素对应传入的 Promise 的结果。</p>
+</blockquote>
+<p><strong>语法：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">allSettled</span>(iterable);
+</code></pre>
+<p><strong>参数说明：</strong></p>
+<ul>
+<li>iterable：一个可迭代的对象，例如 Array，其中每个成员都是 Promise。</li>
+</ul>
+<p><strong>示例：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">let</span> p1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-title function_">resolve</span>(<span class="hljs-string">&quot;p1&quot;</span>);
+    }, <span class="hljs-number">1000</span>);
+});
+
+<span class="hljs-keyword">let</span> p2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-title function_">reject</span>(<span class="hljs-string">&quot;p2&quot;</span>);
+    }, <span class="hljs-number">1500</span>);
+});
+
+<span class="hljs-keyword">let</span> p3 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-title function_">resolve</span>(<span class="hljs-string">&quot;p3&quot;</span>);
+    }, <span class="hljs-number">2000</span>);
+});
+
+<span class="hljs-keyword">let</span> res = <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">allSettled</span>([p1, p2, p3]);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(res);
+</code></pre>
+<h3 id="promiseany">Promise.any</h3>
+<blockquote>
+<p>返回第一个成功的 Promise，如果所有传入的 Promise 都没成功，则返回失败的 Promise。</p>
+</blockquote>
+<p><strong>语法：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">any</span>(iterable);
+</code></pre>
+<p><strong>参数说明：</strong></p>
+<ul>
+<li>iterable：一个可迭代的对象，例如 Array，其中每个成员都是 Promise。</li>
+</ul>
+<p><strong>示例：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">let</span> p1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-title function_">resolve</span>(<span class="hljs-string">&quot;p1&quot;</span>);
+    }, <span class="hljs-number">1000</span>);
+});
+
+<span class="hljs-keyword">let</span> p2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-title function_">reject</span>(<span class="hljs-string">&quot;p2&quot;</span>);
+    }, <span class="hljs-number">1500</span>);
+});
+
+<span class="hljs-keyword">let</span> p3 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-title function_">resolve</span>(<span class="hljs-string">&quot;p3&quot;</span>);
+    }, <span class="hljs-number">2000</span>);
+});
+
+<span class="hljs-keyword">let</span> res = <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">any</span>([p1, p2, p3]);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(res);
+</code></pre>
+<h3 id="promiserace">Promise.race</h3>
+<blockquote>
+<p>返回第一个执行完成的 Promise（不管成功或者失败）。</p>
+</blockquote>
+<p><strong>语法：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">race</span>(iterable);
+</code></pre>
+<p><strong>参数说明：</strong></p>
+<ul>
+<li>iterable：一个可迭代的对象，例如 Array，其中每个成员都是 Promise。</li>
+</ul>
+<p><strong>示例：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">let</span> p1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-title function_">resolve</span>(<span class="hljs-string">&quot;p1&quot;</span>);
+    }, <span class="hljs-number">1000</span>);
+});
+
+<span class="hljs-keyword">let</span> p2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-title function_">reject</span>(<span class="hljs-string">&quot;p2&quot;</span>);
+    }, <span class="hljs-number">1500</span>);
+});
+
+<span class="hljs-keyword">let</span> p3 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-title function_">resolve</span>(<span class="hljs-string">&quot;p3&quot;</span>);
+    }, <span class="hljs-number">500</span>);
+});
+
+<span class="hljs-keyword">let</span> res = <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">race</span>([p1, p2, p3]);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(res);
+</code></pre>
+<h3 id="promisereject">Promise.reject</h3>
+<blockquote>
+<p>返回一个失败的 Promise。</p>
+</blockquote>
+<p><strong>语法：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">reject</span>(reason);
+</code></pre>
+<p><strong>参数说明：</strong></p>
+<ul>
+<li>reason：失败的原因。</li>
+</ul>
+<p><strong>示例：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">let</span> res = <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">reject</span>(<span class="hljs-string">&quot;123&quot;</span>);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(res);
+</code></pre>
+<h3 id="promiseresolve">Promise.resolve</h3>
+<blockquote>
+<p>返回一个成功的 Promise。</p>
+</blockquote>
+<p><strong>语法：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>(reason);
+</code></pre>
+<p><strong>参数说明：</strong></p>
+<ul>
+<li>reason：成功后的数据。</li>
+</ul>
+<p><strong>示例：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">let</span> res = <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>({ <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Best Shi&quot;</span> });
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(res);
+</code></pre>
+<img :src="$withBase('/images/bestshi.com_2021-04-30_18-09-57.jpg')">
+
+<h3 id="实例方法-then">实例方法 .then</h3>
+<blockquote>
+<p>Promise 状态改变后触发。返回一个 Promise。</p>
+<p>一般用于处理成功 Promise。</p>
+</blockquote>
+<p><strong>语法：</strong></p>
+<pre><code class="hljs language-js">p.<span class="hljs-title function_">then</span>(onFulfilled[, onRejected]);
+</code></pre>
+<p><strong>参数说明：</strong></p>
+<ul>
+<li>onFulfilled：Promise 状态变为成功后的回调函数。</li>
+<li>onRejected：Promise 状态变为失败后的回调函数。（可选）</li>
+</ul>
+<p><strong>示例：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-title function_">resolve</span>(<span class="hljs-string">&quot;成功&quot;</span>);
+    }, <span class="hljs-number">1000</span>);
+}).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(res); <span class="hljs-comment">// 成功</span>
+});
+</code></pre>
+<h3 id="实例方法-catch">实例方法 .catch</h3>
+<blockquote>
+<p>用于处理失败的 Promise。能捕获到 throw 抛出的异常。</p>
+</blockquote>
+<p><strong>语法：</strong></p>
+<pre><code class="hljs language-js">p.<span class="hljs-title function_">catch</span>(onRejected);
+</code></pre>
+<p><strong>参数说明：</strong></p>
+<ul>
+<li>onRejected：Promise 状态变为失败后的回调函数。</li>
+</ul>
+<p><strong>示例：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-title function_">reject</span>(<span class="hljs-string">&quot;失败&quot;</span>);
+    }, <span class="hljs-number">1000</span>);
+}).<span class="hljs-title function_">catch</span>(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(err); <span class="hljs-comment">// 失败</span>
+});
+
+<span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-keyword">throw</span> <span class="hljs-string">&quot;error&quot;</span>;
+}).<span class="hljs-title function_">catch</span>(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(res); <span class="hljs-comment">// error</span>
+});
+</code></pre>
+<h3 id="实例方法-finally">实例方法 .finally</h3>
+<blockquote>
+<p>在 promise 结束时，无论结果是 fulfilled 或者是 rejected，都会执行指定的回调函数。</p>
+<p>返回一个设置了 finally 回调函数的 Promise 对象。</p>
+</blockquote>
+<p><strong>语法：</strong></p>
+<pre><code class="hljs language-js">p.<span class="hljs-title function_">finally</span>(onFinally);
+</code></pre>
+<p><strong>参数说明：</strong></p>
+<ul>
+<li>onFinally: Promise 结束后调用的 Function。</li>
+</ul>
+<p><strong>示例：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-title function_">reject</span>(<span class="hljs-string">&quot;失败&quot;</span>);
+    }, <span class="hljs-number">1000</span>);
+}).<span class="hljs-title function_">finally</span>(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(err); <span class="hljs-comment">// 失败</span>
+});
+</code></pre>
+<h2 id="async-await">async await</h2>
+<blockquote>
+<p>async function 关键字用来在表达式中定义异步函数。
+await 操作符用于等待一个 Promise 对象。它只能在异步函数 async function 中使用。</p>
+</blockquote>
+<p><strong>示例：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">let</span> <span class="hljs-title function_">get</span> = (<span class="hljs-params"></span>) =&gt; {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+        <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+            <span class="hljs-title function_">resolve</span>(<span class="hljs-string">&quot;成功&quot;</span>);
+        }, <span class="hljs-number">2000</span>);
+    });
+};
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">fn</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">let</span> res = <span class="hljs-keyword">await</span> <span class="hljs-title function_">get</span>();
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(res);
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">123</span>);
+}
+
+<span class="hljs-title function_">fn</span>();
+</code></pre>
+<h2 id="generator">generator</h2>
+<blockquote>
+<p>function* 这种声明方式(function 关键字后跟一个星号）会定义一个生成器函数 (generator function)，它返回一个 Generator 对象。</p>
+<p>生成器函数在执行时能暂停，后面又能从暂停处继续执行。</p>
+</blockquote>
+<p><strong>语法：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span>* <span class="hljs-title function_">name</span>(<span class="hljs-params">[param[, param[, ... param]]]</span>) { statements }
+</code></pre>
+<ul>
+<li>name：函数名。</li>
+<li>param：函数参数。</li>
+<li>statements：函数体。</li>
+</ul>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span>* <span class="hljs-title function_">gen</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">yield</span> <span class="hljs-string">&quot;一&quot;</span>;
+    <span class="hljs-keyword">yield</span> <span class="hljs-string">&quot;二&quot;</span>;
+}
+
+<span class="hljs-keyword">let</span> gen_obj = <span class="hljs-title function_">gen</span>();
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(gen_obj.<span class="hljs-title function_">next</span>()); <span class="hljs-comment">// {value: &quot;一&quot;, done: false}</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(gen_obj.<span class="hljs-title function_">next</span>()); <span class="hljs-comment">// {value: &quot;二&quot;, done: false}</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(gen_obj.<span class="hljs-title function_">next</span>()); <span class="hljs-comment">// {value: undefined, done: true}</span>
+</code></pre>
+<p><strong>yield 语法：</strong></p>
+<pre><code class="hljs language-js">[rv] = <span class="hljs-keyword">yield</span>[expression];
+</code></pre>
+<ul>
+<li>expression：从生成器返回的值。</li>
+<li>rv：从 next()传入的值。</li>
+</ul>
+<h3 id="generatorprototypenext">Generator.prototype.next()</h3>
+<blockquote>
+<p>返回一个由 yield 表达式生成的值。包含属性 done 和 value 的对象。该方法也可以通过接受一个参数用以向生成器传值。</p>
+</blockquote>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span>* <span class="hljs-title function_">gen</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">let</span> val = <span class="hljs-keyword">yield</span> <span class="hljs-string">&quot;hello&quot;</span>;
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(val); <span class="hljs-comment">// 你好</span>
+    <span class="hljs-keyword">yield</span> <span class="hljs-string">&quot;world&quot;</span>;
+}
+
+<span class="hljs-keyword">let</span> g = <span class="hljs-title function_">gen</span>();
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(g.<span class="hljs-title function_">next</span>()); <span class="hljs-comment">// {value: &quot;hello&quot;, done: false}</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(g.<span class="hljs-title function_">next</span>(<span class="hljs-string">&quot;你好&quot;</span>)); <span class="hljs-comment">// {value: &quot;world&quot;, done: false}</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(g.<span class="hljs-title function_">next</span>()); <span class="hljs-comment">// {value: undefined, done: true}</span>
+</code></pre>
+<h3 id="generatorprototypereturn">Generator.prototype.return()</h3>
+<blockquote>
+<p>返回给定的值并结束生成器。</p>
+</blockquote>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span>* <span class="hljs-title function_">gen</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">yield</span> <span class="hljs-string">&quot;hello&quot;</span>;
+    <span class="hljs-keyword">yield</span> <span class="hljs-string">&quot;world&quot;</span>;
+    <span class="hljs-keyword">yield</span> <span class="hljs-string">&quot;123&quot;</span>;
+}
+
+<span class="hljs-keyword">let</span> g = <span class="hljs-title function_">gen</span>();
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(g.<span class="hljs-title function_">next</span>()); <span class="hljs-comment">// {value: &quot;hello&quot;, done: false}</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(g.<span class="hljs-keyword">return</span>(<span class="hljs-string">&quot;aaa&quot;</span>)); <span class="hljs-comment">// {value: &quot;aaa&quot;, done: true}</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(g.<span class="hljs-title function_">next</span>()); <span class="hljs-comment">// {value: undefined, done: true}</span>
+</code></pre>
+<h3 id="generatorprototypethrow">Generator.prototype.throw()</h3>
+<blockquote>
+<p>向生成器抛出一个错误。</p>
+</blockquote>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span>* <span class="hljs-title function_">gen</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">try</span> {
+        <span class="hljs-keyword">yield</span> <span class="hljs-number">20</span>;
+    } <span class="hljs-keyword">catch</span> (error) {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(error); <span class="hljs-comment">// 错误</span>
+    }
+}
+
+<span class="hljs-keyword">let</span> g = <span class="hljs-title function_">gen</span>();
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(g.<span class="hljs-title function_">next</span>()); <span class="hljs-comment">// {value: 20, done: false}</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(g.<span class="hljs-keyword">throw</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">&quot;错误&quot;</span>))); <span class="hljs-comment">// {value: undefined, done: true}</span>
+</code></pre>
+<img :src="$withBase('/images/bestshi.com_2021-04-30_20-41-27.jpg')">
+
+<h2 id="金典面试题">金典面试题</h2>
+<p><strong>写出下面代码答应顺序：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;setTimeout&quot;</span>);
+}, <span class="hljs-number">0</span>);
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">async1</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;async1 start&quot;</span>);
+    <span class="hljs-keyword">await</span> <span class="hljs-title function_">async2</span>();
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;async1 end&quot;</span>);
+}
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">async2</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;async2&quot;</span>);
+}
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;script start&quot;</span>);
+<span class="hljs-title function_">async1</span>();
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;script end&quot;</span>);
+</code></pre>
+<pre><code class="hljs language-js">script start
+async1 start
+async2
+script end
+async1 end
+<span class="hljs-built_in">setTimeout</span>
+</code></pre>
+</div>
+        
+      </div>
+    </div>
+  </body>
+</html>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>Best Shi</title>
+    <title>npm-workspace</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -302,7 +302,48 @@
       </div>
       <div class="content">
         
-        <h2>aaaa</h2>
+        <div><h1 id="npm-workspace-项目搭建及使用">npm workspace 项目搭建及使用</h1>
+<h2 id="初始化项目">初始化项目</h2>
+<pre><code class="hljs language-bash">npm init -y
+</code></pre>
+<h2 id="创建包">创建包</h2>
+<ol>
+<li>创建包目录</li>
+</ol>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">mkdir</span> packages
+</code></pre>
+<ol start="2">
+<li>生成包</li>
+</ol>
+<pre><code class="hljs language-bash">npm init -w ./packages/package1 -y
+</code></pre>
+<p><strong>注意：</strong> 遇到如下错误，先执行 <code>npm install -g npm</code> 。</p>
+<pre><code class="hljs language-bash">npm ERR! code ENOWORKSPACES
+npm ERR! This <span class="hljs-built_in">command</span> does not support workspaces.
+</code></pre>
+<h2 id="给包中安装依赖">给包中安装依赖</h2>
+<ul>
+<li>开发依赖</li>
+</ul>
+<pre><code class="hljs language-bash">npm install uuid -w package1 -D
+</code></pre>
+<ul>
+<li>项目依赖</li>
+</ul>
+<pre><code class="hljs language-bash">npm install uuid -w package1
+</code></pre>
+<h2 id="包中代码相互引用">包中代码相互引用</h2>
+<p><code>./package1/index.js</code></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">fn</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;package1&#x27;</span>);
+}
+</code></pre>
+<p><code>./package2/index.js</code></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> fn <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;package1&#x27;</span>;
+
+<span class="hljs-title function_">fn</span>();
+</code></pre>
+</div>
         
       </div>
     </div>

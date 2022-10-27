@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>抽象语法树</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        
+        <div>
+          <p class="menu">Git</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="3882148c-0b2c-42e5-b296-d0840ce5b1b5.html">
+                Git 学习
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">JavaScript</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="c38a0720-f219-45c2-a4e2-8fd16a605ac9.html">
+                JavaScript异步处理
+              </a>
+              
+              <a class="menu-item" href="58151af3-b4ee-4d98-910a-af2f9e539daa.html">
+                JavaScript数组
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">linux</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="ac95e51a-41a4-480b-b03d-579e6355e5fb.html">
+                ArchLinux安装美化之系统安装
+              </a>
+              
+              <a class="menu-item" href="ad70507b-6a95-4ffd-9402-b8056ac2b57b.html">
+                Linux 压缩和解压缩命令
+              </a>
+              
+              <a class="menu-item" href="d4f63889-5d89-400a-ad95-af8542bf9526.html">
+                Linux 网络配置
+              </a>
+              
+              <a class="menu-item" href="eeacbcc9-2a96-4162-8e36-8e174fe83e9c.html">
+                nvm 安装与配置
+              </a>
+              
+              <a class="menu-item" href="51285dee-d019-4bd7-9ca1-44b4c8b8cfa5.html">
+                oh-my-zsh 安装与配置
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">MongDB</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="6b088c8e-f645-40cb-88c7-f07790f14ef4.html">
+                MongoDB基本使用
+              </a>
+              
+              <a class="menu-item" href="7fba68ff-4bbe-4808-8d2f-d6eb436b3bb2.html">
+                MongoDB权限配置
+              </a>
+              
+              <a class="menu-item" href="e36a6698-e63a-4a52-8a21-4b4087aa37f2.html">
+                MongoDB进阶
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">Nginx</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="a6e365b4-cb4c-47fa-a1b5-4a0179f4ad1a.html">
+                Nginx安装
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">npm</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="d6120c83-9835-4349-9851-eb8fdc618241.html">
+                npm-workspace
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">PowerShell</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="e26e5a3f-8063-47e3-8c54-7f031b0e4da0.html">
+                PoserShell 学习
+              </a>
+              
+              <a class="menu-item" href="92c0884a-6dcd-4cae-8706-3b493f3c0ec6.html">
+                powershell 命令
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">rust</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="4c42e7ab-5b8e-401f-bb78-e02af1e43931.html">
+                Rust 基础
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">TypeScript</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="4fb7f7a9-c84b-4b5f-a9f7-a59746847cd2.html">
+                TypeScript 基本项目搭建
+              </a>
+              
+              <a class="menu-item" href="f9fd825f-3873-4bcf-98d8-0540b2ad564c.html">
+                TypeScript类型与配置笔记
+              </a>
+              
+              <a class="menu-item" href="830e7bca-c70e-46ac-bbe3-38c3fb074d31.html">
+                TypeScript面向对象笔记
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">vscode</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="8eb6cf39-0fe0-44f4-9688-ba3a78ddcb01.html">
+                vscode配置
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">vue3</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="376f3c97-98fa-4be3-8498-ad171ef47f5e.html">
+                Composition API(其它部分)
+              </a>
+              
+              <a class="menu-item" href="f952a41f-f7e7-4656-88a6-86227810f577.html">
+                Composition API(常用部分)
+              </a>
+              
+              <a class="menu-item" href="fd325294-cc0e-401a-b208-0aa020abe6c4.html">
+                Vue3 新组件
+              </a>
+              
+              <a class="menu-item" href="39684220-ebb6-4859-9ec5-cc5b281f29e2.html">
+                vue3快速上手
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">webpack</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="ae49d136-883a-44c1-95a2-0304faa72659.html">
+                vue+ts+eslint前端项目搭建
+              </a>
+              
+              <a class="menu-item" href="2909c6fc-8b52-40de-970a-b407186840c7.html">
+                webpack + vue 企业级项目搭建
+              </a>
+              
+              <a class="menu-item" href="f1aaab61-c7bd-46a3-b924-4d09f1365b3b.html">
+                webpack
+              </a>
+              
+              <a class="menu-item" href="50f1a98c-1bb2-4a66-b45f-68a5c20d2d15.html">
+                webpack配置
+              </a>
+              
+              <a class="menu-item" href="bd69632e-826e-4963-aa5c-bc637a478fa0.html">
+                前端常用
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">Windows</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="4c6ae43e-cb77-4bcd-b124-5d9445203188.html">
+                Windows Terminal设置代理
+              </a>
+              
+              <a class="menu-item" href="d46e04e5-8dcd-43cc-8550-4b30f990ac25.html">
+                Windows安装优化
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">其它</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="49e1a6ba-d046-4f4d-bfab-3822f26c63eb.html">
+                mustache模板引擎
+              </a>
+              
+              <a class="menu-item" href="88eb9688-23bc-4f31-8ce3-7059b82404b2.html">
+                双向数据绑定
+              </a>
+              
+              <a class="menu-item" href="d7f3c26e-b00c-4994-83c9-e8cece3b69bd.html">
+                抽象语法树
+              </a>
+              
+              <a class="menu-item" href="3f4ef750-bcd5-4bf8-9d93-d0e104fb3e5c.html">
+                虚拟DOM与diff算法
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">打包构建工具</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="a6cd94be-cdc2-409b-b22f-9b27174f24ac.html">
+                Grunt
+              </a>
+              
+              <a class="menu-item" href="04185fa8-85fc-4a99-9b72-4034b9bcb0a2.html">
+                Gulp
+              </a>
+              
+              <a class="menu-item" href="bf96905d-6e68-4d2a-a6b5-1622150bf8a6.html">
+                Rollup
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="content">
+        
+        <div><h1 id="抽象语法树">抽象语法树</h1>
+<h2 id="抽象语法树简介">抽象语法树简介</h2>
+<blockquote>
+<p>抽象语法树(Abstract Syntax Tree), 本质上就是一个 JavaScript 对象。</p>
+</blockquote>
+<h2 id="知识点准备">知识点准备</h2>
+<h3 id="指针思想">指针思想</h3>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 寻找连续重复次数最多的字符</span>
+<span class="hljs-keyword">let</span> str = <span class="hljs-string">&quot;aaaabbbbbcccccccccccccdddddd&quot;</span>;
+
+<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">let</span> j = <span class="hljs-number">1</span>;
+<span class="hljs-comment">// 当前重复最多的次数</span>
+<span class="hljs-keyword">let</span> maxRepeatCount = <span class="hljs-number">0</span>;
+<span class="hljs-comment">// 重复最对的字符串</span>
+<span class="hljs-keyword">let</span> maxRepeatChar = <span class="hljs-string">&quot;&quot;</span>;
+
+<span class="hljs-keyword">while</span> (i &lt;= str.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>) {
+    <span class="hljs-comment">// 看i和j指向的字符是否相同</span>
+    <span class="hljs-keyword">if</span> (str[i] !== str[j]) {
+        <span class="hljs-keyword">if</span> (j - i &gt; maxRepeatCount) {
+            maxRepeatCount = j - i;
+            maxRepeatChar = str[i];
+        }
+        i = j;
+    }
+    j++;
+}
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`<span class="hljs-subst">${maxRepeatChar}</span>, 重复了<span class="hljs-subst">${maxRepeatCount}</span>次`</span>);
+</code></pre>
+<h3 id="递归">递归</h3>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 斐波那契数列</span>
+
+<span class="hljs-keyword">let</span> cache = {};
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">fib</span>(<span class="hljs-params">num</span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">count</span>(<span class="hljs-string">&quot;调用&quot;</span>);
+    <span class="hljs-keyword">if</span> (cache.<span class="hljs-title function_">hasOwnProperty</span>(num)) {
+        <span class="hljs-keyword">return</span> cache[num];
+    }
+    <span class="hljs-keyword">let</span> val = num === <span class="hljs-number">0</span> || num === <span class="hljs-number">1</span> ? <span class="hljs-number">1</span> : <span class="hljs-title function_">fib</span>(num - <span class="hljs-number">1</span>) + <span class="hljs-title function_">fib</span>(num - <span class="hljs-number">2</span>);
+    cache[num] = val;
+    <span class="hljs-keyword">return</span> val;
+}
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">fib</span>(<span class="hljs-number">10</span>));
+</code></pre>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 数组转换成对象</span>
+
+<span class="hljs-keyword">let</span> arr = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>], <span class="hljs-number">6</span>, <span class="hljs-number">7</span>];
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">convert</span>(<span class="hljs-params">item</span>) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> item === <span class="hljs-string">&quot;number&quot;</span>) {
+        <span class="hljs-keyword">return</span> {
+            <span class="hljs-attr">value</span>: item,
+        };
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-title class_">Array</span>.<span class="hljs-title function_">isArray</span>(item)) {
+        <span class="hljs-keyword">return</span> {
+            <span class="hljs-attr">children</span>: item.<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">val</span>) =&gt;</span> <span class="hljs-title function_">convert</span>(val)),
+        };
+    }
+}
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">convert</span>(arr));
+</code></pre>
+<h3 id="栈">栈</h3>
+<ul>
+<li>栈(stack): 又名堆栈，它是一种运算受限的线性表，仅在表尾能进行插入和删除操作。这一端被称为栈顶，相对地，把另一端称为栈底。</li>
+<li>向一个栈插入新元素又称作进栈、入栈或压栈；从一个栈删除元素又称作出栈或退栈。</li>
+<li>后进先出（LIFO）特点：栈中的元素，最先进栈的必定是最后出栈，后进栈的一定会先出栈。</li>
+</ul>
+<p>遍历每一个字符</p>
+<ul>
+<li>如果这个字符是数字，那么就把数字压栈，把空字符串压栈。</li>
+<li>如果这个字符是字母，那么此时就把栈顶这项改为这个字母。</li>
+<li>如果这个字符是]，那么就将数字弹栈，就把字符串栈的栈顶的元素重复刚刚的这个次数，弹栈，拼接到新栈顶上。</li>
+</ul>
+<pre><code class="hljs language-js"><span class="hljs-keyword">let</span> str = <span class="hljs-string">&quot;2[1[a]3[b]2[3[c]4[d]]]&quot;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">smartRepeat</span>(<span class="hljs-params">str</span>) {
+    <span class="hljs-comment">// 指针</span>
+    <span class="hljs-keyword">let</span> index = <span class="hljs-number">0</span>;
+    <span class="hljs-comment">// 栈1：存放数字</span>
+    <span class="hljs-keyword">let</span> stack1 = [];
+    <span class="hljs-comment">// 栈2：存放临时字符串</span>
+    <span class="hljs-keyword">let</span> stack2 = [];
+    <span class="hljs-comment">// 剩余字符串</span>
+    <span class="hljs-keyword">let</span> rest = str;
+
+    <span class="hljs-keyword">while</span> (index &lt; str.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>) {
+        rest = str.<span class="hljs-title function_">substring</span>(index);
+
+        <span class="hljs-comment">// 看当前剩余部分是不是以数字和[开头</span>
+        <span class="hljs-keyword">if</span> (<span class="hljs-regexp">/^\d+\[/</span>.<span class="hljs-title function_">test</span>(rest)) {
+            <span class="hljs-keyword">let</span> item = <span class="hljs-title class_">Number</span>(rest.<span class="hljs-title function_">match</span>(<span class="hljs-regexp">/^(\d+)\[/</span>)[<span class="hljs-number">1</span>]);
+            stack1.<span class="hljs-title function_">push</span>(item);
+            stack2.<span class="hljs-title function_">push</span>(<span class="hljs-string">&quot;&quot;</span>);
+            index += item.<span class="hljs-title function_">toString</span>().<span class="hljs-property">length</span> + <span class="hljs-number">1</span>;
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-regexp">/^\w+\]/</span>.<span class="hljs-title function_">test</span>(rest)) {
+            <span class="hljs-comment">// 如果这个字符是字母，那么此时就把栈顶这项改为这个字母</span>
+            <span class="hljs-keyword">let</span> word = rest.<span class="hljs-title function_">match</span>(<span class="hljs-regexp">/^(\w+)\]/</span>)[<span class="hljs-number">1</span>];
+            stack2[stack2.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>] = word;
+            index += word.<span class="hljs-property">length</span>;
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (rest[<span class="hljs-number">0</span>] === <span class="hljs-string">&quot;]&quot;</span>) {
+            <span class="hljs-comment">// 如果这个字符是]，那么就</span>
+            <span class="hljs-comment">// ①将stack1弹栈，</span>
+            <span class="hljs-comment">// ②stack2弹栈，</span>
+            <span class="hljs-comment">// ③把字符串栈的新栈顶的元素重复刚刚弹出的那个字符串指定次数拼接到新栈顶上。</span>
+            <span class="hljs-keyword">let</span> item = stack1.<span class="hljs-title function_">pop</span>();
+            <span class="hljs-keyword">let</span> word = stack2.<span class="hljs-title function_">pop</span>();
+            stack2[stack2.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>] += word.<span class="hljs-title function_">repeat</span>(item);
+            index++;
+        }
+    }
+
+    <span class="hljs-keyword">return</span> stack2[<span class="hljs-number">0</span>].<span class="hljs-title function_">repeat</span>(stack1[<span class="hljs-number">0</span>]);
+}
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">smartRepeat</span>(str)); <span class="hljs-comment">// abbbcccddddcccddddabbbcccddddcccdddd</span>
+</code></pre>
+<h2 id="实现-ast-抽象语法树">实现 AST 抽象语法树</h2>
+<h3 id="安装项目依赖">安装项目依赖</h3>
+<pre><code class="hljs language-shell">npm install -D webpack webpack-cli webpack-dev-server html-webpack-plugin
+</code></pre>
+<h3 id="配置项目">配置项目</h3>
+<p><strong>配置 webpack.config.js 文件</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> { resolve } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;path&quot;</span>);
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">HtmlWebpackPlugin</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;html-webpack-plugin&quot;</span>);
+
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = {
+    <span class="hljs-attr">entry</span>: <span class="hljs-string">&quot;./src/index.js&quot;</span>,
+    <span class="hljs-attr">output</span>: {
+        <span class="hljs-attr">filename</span>: <span class="hljs-string">&quot;index.js&quot;</span>,
+        <span class="hljs-attr">path</span>: <span class="hljs-title function_">resolve</span>(__dirname, <span class="hljs-string">&quot;dist&quot;</span>),
+    },
+    <span class="hljs-attr">plugins</span>: [
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">HtmlWebpackPlugin</span>({
+            <span class="hljs-attr">template</span>: <span class="hljs-string">&quot;./src/index.html&quot;</span>,
+        }),
+    ],
+    <span class="hljs-attr">devServer</span>: {
+        <span class="hljs-attr">contentBase</span>: <span class="hljs-title function_">resolve</span>(__dirname, <span class="hljs-string">&quot;dist&quot;</span>),
+        <span class="hljs-attr">port</span>: <span class="hljs-number">8001</span>,
+        <span class="hljs-attr">open</span>: <span class="hljs-literal">true</span>,
+    },
+};
+</code></pre>
+<h2 id="实现模板转抽象语法树">实现模板转抽象语法树</h2>
+<p><strong>parse.js</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> parseAttrsString <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./parseAttrsString.js&quot;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">parse</span>(<span class="hljs-params">tempalateString</span>) {
+    <span class="hljs-comment">// 指针</span>
+    <span class="hljs-keyword">let</span> index = <span class="hljs-number">0</span>;
+    <span class="hljs-comment">// 剩余部分</span>
+    <span class="hljs-keyword">let</span> rest = <span class="hljs-string">&quot;&quot;</span>;
+    <span class="hljs-comment">// 开始标记与结束标记正则</span>
+    <span class="hljs-keyword">let</span> startRegExp = <span class="hljs-regexp">/^\&lt;([a-z]+[1-6]?)(\s[^\&lt;]+)?\&gt;/</span>;
+    <span class="hljs-keyword">let</span> endRegExp = <span class="hljs-regexp">/^\&lt;\/([a-z]+[1-6]?)\&gt;/</span>;
+    <span class="hljs-comment">// 抓取结束标记前文字</span>
+    <span class="hljs-keyword">let</span> wordRegExp = <span class="hljs-regexp">/^([^\&lt;]+)\&lt;\/[a-z]+[1-6]?\&gt;/</span>;
+    <span class="hljs-comment">// 栈</span>
+    <span class="hljs-keyword">let</span> stack1 = [];
+    <span class="hljs-keyword">let</span> stack2 = [{ <span class="hljs-attr">children</span>: [] }];
+
+    <span class="hljs-keyword">while</span> (index &lt; tempalateString.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>) {
+        rest = tempalateString.<span class="hljs-title function_">substring</span>(index);
+
+        <span class="hljs-keyword">if</span> (startRegExp.<span class="hljs-title function_">test</span>(rest)) {
+            <span class="hljs-keyword">let</span> tag = rest.<span class="hljs-title function_">match</span>(startRegExp)[<span class="hljs-number">1</span>];
+            <span class="hljs-keyword">let</span> attrsString = rest.<span class="hljs-title function_">match</span>(startRegExp)[<span class="hljs-number">2</span>];
+            stack1.<span class="hljs-title function_">push</span>(tag);
+            stack2.<span class="hljs-title function_">push</span>({
+                <span class="hljs-attr">tag</span>: tag,
+                <span class="hljs-attr">children</span>: [],
+                <span class="hljs-attr">attrs</span>: <span class="hljs-title function_">parseAttrsString</span>(attrsString),
+            });
+            <span class="hljs-keyword">let</span> attrsStringLength =
+                attrsString != <span class="hljs-literal">null</span> ? attrsString.<span class="hljs-property">length</span> : <span class="hljs-number">0</span>;
+            index += tag.<span class="hljs-property">length</span> + <span class="hljs-number">2</span> + attrsStringLength;
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (endRegExp.<span class="hljs-title function_">test</span>(rest)) {
+            <span class="hljs-keyword">let</span> tag = rest.<span class="hljs-title function_">match</span>(endRegExp)[<span class="hljs-number">1</span>];
+            <span class="hljs-keyword">if</span> (tag === stack1[stack1.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>]) {
+                stack1.<span class="hljs-title function_">pop</span>();
+                <span class="hljs-keyword">let</span> pop_arr = stack2.<span class="hljs-title function_">pop</span>();
+                <span class="hljs-keyword">if</span> (stack2.<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span>) {
+                    stack2[stack2.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>].<span class="hljs-property">children</span>.<span class="hljs-title function_">push</span>(pop_arr);
+                }
+            } <span class="hljs-keyword">else</span> {
+                <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">&quot;标签没有闭合&quot;</span>);
+            }
+            index += tag.<span class="hljs-property">length</span> + <span class="hljs-number">3</span>;
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (wordRegExp.<span class="hljs-title function_">test</span>(rest)) {
+            <span class="hljs-keyword">let</span> word = rest.<span class="hljs-title function_">match</span>(wordRegExp)[<span class="hljs-number">1</span>];
+            <span class="hljs-keyword">if</span> (!<span class="hljs-regexp">/^\s+$/</span>.<span class="hljs-title function_">test</span>(word)) {
+                stack2[stack2.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>].<span class="hljs-property">children</span>.<span class="hljs-title function_">push</span>({
+                    <span class="hljs-attr">text</span>: word,
+                    <span class="hljs-attr">type</span>: <span class="hljs-number">3</span>,
+                });
+            }
+            index += word.<span class="hljs-property">length</span>;
+        } <span class="hljs-keyword">else</span> {
+            index++;
+        }
+    }
+
+    <span class="hljs-keyword">return</span> stack2[<span class="hljs-number">0</span>].<span class="hljs-property">children</span>[<span class="hljs-number">0</span>];
+}
+</code></pre>
+<p><strong>parseAttsString.js</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">parseAttrsString</span>(<span class="hljs-params">str</span>) {
+    <span class="hljs-keyword">if</span> (str == <span class="hljs-literal">undefined</span>) <span class="hljs-keyword">return</span> [];
+
+    <span class="hljs-keyword">let</span> temp = str.<span class="hljs-title function_">trim</span>();
+    <span class="hljs-keyword">let</span> isYinhao = <span class="hljs-literal">false</span>;
+    <span class="hljs-keyword">let</span> point = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">let</span> result = [];
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; temp.<span class="hljs-property">length</span>; i++) {
+        <span class="hljs-keyword">let</span> char = temp[i];
+
+        <span class="hljs-keyword">if</span> (char === <span class="hljs-string">&quot;&#x27;&quot;</span>) {
+            isYinhao = !isYinhao;
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (char === <span class="hljs-string">&quot; &quot;</span> &amp;&amp; !isYinhao) {
+            result.<span class="hljs-title function_">push</span>(temp.<span class="hljs-title function_">substring</span>(point, i).<span class="hljs-title function_">trim</span>());
+            point = i;
+        }
+    }
+    result.<span class="hljs-title function_">push</span>(temp.<span class="hljs-title function_">substring</span>(point).<span class="hljs-title function_">trim</span>());
+
+    result = result.<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">item</span>) =&gt;</span> {
+        <span class="hljs-keyword">const</span> val = item.<span class="hljs-title function_">match</span>(<span class="hljs-regexp">/^(.+)=[&#x27;&quot;](.+)[&#x27;&quot;]$/</span>);
+        <span class="hljs-keyword">return</span> {
+            <span class="hljs-attr">name</span>: val[<span class="hljs-number">1</span>],
+            <span class="hljs-attr">value</span>: val[<span class="hljs-number">2</span>],
+        };
+    });
+
+    <span class="hljs-keyword">return</span> result;
+}
+</code></pre>
+<p><strong>index.js</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> parse <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./parse.js&quot;</span>;
+
+<span class="hljs-keyword">const</span> templateString = <span class="hljs-string">`&lt;div&gt;
+ &lt;h3 class=&#x27;active text&#x27; id=&#x27;hello&#x27;&gt;你好&lt;/h3&gt;
+ &lt;ul&gt;
+     &lt;li&gt;A&lt;/li&gt;
+     &lt;li&gt;B&lt;/li&gt;
+     &lt;li&gt;C&lt;/li&gt;
+ &lt;/ul&gt; 
+&lt;/div&gt;
+ `</span>;
+
+<span class="hljs-keyword">const</span> ast = <span class="hljs-title function_">parse</span>(templateString);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(ast);
+</code></pre>
+</div>
+        
+      </div>
+    </div>
+  </body>
+</html>

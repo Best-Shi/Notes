@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>Best Shi</title>
+    <title>ArchLinux安装美化之系统安装</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -302,7 +302,272 @@
       </div>
       <div class="content">
         
-        <h2>aaaa</h2>
+        <div><h1 id="archlinux-安装美化之系统安装">ArchLinux 安装美化之系统安装</h1>
+<h2 id="archlinux-系统安装">ArchLinux 系统安装</h2>
+<ol>
+<li><p>制作 U 盘启动，推荐使用工具<a href="https://www.balena.io/etcher/">Etcher</a></p>
+</li>
+<li><p>启动 u 盘系统，验证引导模式。</p>
+</li>
+</ol>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">ls</span> /sys/firmware/efi/efivars
+</code></pre>
+<p>如果命令结果显示了目录且没有报告错误，则系统以 UEFI 模式引导。 如果目录不存在，则系统可能以 BIOS 模式 (或 CSM 模式) 引导。</p>
+<ol start="3">
+<li><p>连接网络</p>
+<ul>
+<li>查看是否启用网络接口。</li>
+</ul>
+<pre><code class="hljs language-bash">ip <span class="hljs-built_in">link</span>
+</code></pre>
+<ul>
+<li>检查网络连接状态</li>
+</ul>
+<pre><code class="hljs language-bash">ping www.baidu.com
+</code></pre>
+<ul>
+<li>使用 NetworkManager 连接网络。</li>
+</ul>
+<p>a. 启动 NetworkManager</p>
+<pre><code class="hljs language-bash">systemctl start NetworkManager
+</code></pre>
+<p>b. 查看可用 wifi</p>
+<pre><code class="hljs language-bash">nmcli device wifi list
+</code></pre>
+<p>c. 连接 wifi</p>
+<pre><code class="hljs language-bash">nmcli device wifi connect [BSSID|SSID] password password
+</code></pre>
+</li>
+<li><p>更新系统时间</p>
+</li>
+</ol>
+<pre><code class="hljs language-bash">timedatectl set-ntp <span class="hljs-literal">true</span>
+</code></pre>
+<ol start="5">
+<li>建立应该盘分区</li>
+</ol>
+<p><strong>BIOS 与 MBR</strong></p>
+<table>
+<thead>
+<tr>
+<th>挂载点</th>
+<th>分区</th>
+<th>分区类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>SWAP</td>
+<td>交换分区(/dev/swap)</td>
+<td>Linux swap</td>
+</tr>
+<tr>
+<td>/mnt</td>
+<td>根分区(/dev/root)</td>
+<td>Linux</td>
+</tr>
+</tbody></table>
+<p><strong>UEFI 与 GPT</strong></p>
+<table>
+<thead>
+<tr>
+<th>挂载点</th>
+<th>分区</th>
+<th>分区类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>/mnt/boot 或/mnt/efi</td>
+<td>efi 系统分区(/dev/efi)</td>
+<td>EFI 系统分区</td>
+</tr>
+<tr>
+<td>SWAP</td>
+<td>交换分区(/dev/swap)</td>
+<td>Linux swap</td>
+</tr>
+<tr>
+<td>/mnt</td>
+<td>根分区(/dev/root)</td>
+<td>Linux</td>
+</tr>
+</tbody></table>
+<ol start="6">
+<li>格式化分区</li>
+</ol>
+<pre><code class="hljs language-bash"><span class="hljs-comment"># 挂载根分区</span>
+mkfs.ext4 /dev/root
+
+<span class="hljs-comment"># 格式化交换分区</span>
+mkswap /dev/swap
+
+<span class="hljs-comment"># 格式化eif分区</span>
+mkfs.fat -F 32 /dev/eif
+</code></pre>
+<ol start="7">
+<li>挂载分区</li>
+</ol>
+<pre><code class="hljs language-bash"><span class="hljs-comment"># 挂载根分区</span>
+mount /dev/root /mnt
+
+<span class="hljs-comment"># 挂载交换分区</span>
+swapon /dev/swap
+</code></pre>
+<ol start="8">
+<li>修改镜像源</li>
+</ol>
+<pre><code class="hljs language-bash"><span class="hljs-comment"># 选择最近12小时同步的，并且位于中国的镜像，然后根据下载速度排序，最后将结果覆写到`/etc/pacman.d/mirrorlist`</span>
+reflector --country China --age 12 --protocol https --<span class="hljs-built_in">sort</span> rate --save /etc/pacman.d/mirrorlist
+</code></pre>
+<ol start="9">
+<li>安装系统</li>
+</ol>
+<pre><code class="hljs language-bash">pacstrap /mnt base base-devel linux linux-firmware vim
+</code></pre>
+<h2 id="配置系统">配置系统</h2>
+<ol>
+<li>生成 fstab 文件</li>
+</ol>
+<pre><code class="hljs language-bash">genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+</code></pre>
+<ol start="2">
+<li>切换到新系统</li>
+</ol>
+<pre><code class="hljs language-bash">arch-chroot /mnt
+</code></pre>
+<ol start="3">
+<li>设置时区</li>
+</ol>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">ln</span> -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+</code></pre>
+<ol start="4">
+<li>生成 /etc/adjtime</li>
+</ol>
+<pre><code class="hljs language-bash">hwclock --systohc
+</code></pre>
+<ol start="5">
+<li>本地化</li>
+</ol>
+<p>编辑 <code>/etc/locale.gen</code>，然后取消掉 <code>en_US.UTF-8 UTF-8</code>、<code>zh_CN.UTF-8 UTF-8</code>、<code>zh_CN.GBK GBK</code>、<code>zh_CN GB2312</code>的注释。执行 <code>locale.gen</code>生成 <code>locale</code>信息。</p>
+<pre><code class="hljs language-bash">locale.gen
+</code></pre>
+<p>设置系统语言创建<code>locale.conf</code>文件，设置 <code>LANG</code>变量（建议设置为英文，避免出现中文乱码）。</p>
+<pre><code class="hljs language-bash">vim /etc/locale.conf
+LANG=en_US.UTF-8
+</code></pre>
+<h2 id="配置网络">配置网络</h2>
+<ol>
+<li>创建 <code>hostname</code> 文件</li>
+</ol>
+<pre><code class="hljs language-bash">vim /etc/hostname
+myhostname <span class="hljs-comment"># 主机名</span>
+</code></pre>
+<ol start="2">
+<li>添加 <code>hosts</code>文件</li>
+</ol>
+<pre><code class="hljs language-bash">vim /etc/hosts
+127.0.0.1	localhost
+::1			localhost
+127.0.1.1	myhostname <span class="hljs-comment"># 主机名</span>
+</code></pre>
+<ol start="3">
+<li>修改镜像源</li>
+</ol>
+<pre><code class="hljs language-bash">reflector --country China --age 12 --protocol https --<span class="hljs-built_in">sort</span> rate --save /etc/pacman.d/mirrorlist
+</code></pre>
+<ol start="4">
+<li>安装网络管理工具</li>
+</ol>
+<pre><code class="hljs language-bash">pacman -S networkmanager
+systemctl <span class="hljs-built_in">enable</span> NetworkManager <span class="hljs-comment"># 设置开机启动</span>
+</code></pre>
+<h2 id="配置用户">配置用户</h2>
+<ol>
+<li>设置 root 密码</li>
+</ol>
+<pre><code class="hljs language-bash">passwd
+</code></pre>
+<ol start="2">
+<li>创建普通用户</li>
+</ol>
+<pre><code class="hljs language-bash">useradd -m -G wheel shi <span class="hljs-comment"># shi: 用户名</span>
+passwd shi <span class="hljs-comment"># 设置普通用户密码</span>
+</code></pre>
+<ol start="3">
+<li>让普通用户能使用 sudo 执行管理员命令</li>
+</ol>
+<pre><code class="hljs language-bash">pacman -S sudo
+vim /etc/sudoers <span class="hljs-comment"># 取消 %wheel ALL=(ALL) ALL 前面的注释</span>
+</code></pre>
+<h2 id="安装微码和驱动">安装微码和驱动</h2>
+<ol>
+<li>安装微码</li>
+</ol>
+<pre><code class="hljs language-bash"><span class="hljs-comment"># amd cpu 安装这个</span>
+pacman -S amd-ucode
+
+<span class="hljs-comment"># intel cpu 安装这个</span>
+pacman -S intel-ucode
+</code></pre>
+<ol start="2">
+<li>安装驱动</li>
+</ol>
+<pre><code class="hljs language-bash"><span class="hljs-comment"># nvidia 显卡</span>
+pacman -S nvidia nvidia-utils
+
+<span class="hljs-comment"># amd 显卡或核显</span>
+pacman -S xf86-video-amdgpu
+
+<span class="hljs-comment"># intel 核显</span>
+pacman -S xf86-video-intel
+</code></pre>
+<h2 id="安装引导程序">安装引导程序</h2>
+<ol>
+<li>安装引导工具</li>
+</ol>
+<pre><code class="hljs language-bash">pacman -S grub
+</code></pre>
+<ol start="2">
+<li>BIOS 启动安装引导</li>
+</ol>
+<pre><code class="hljs language-bash">grub-install --target=i386-pc /dev/sdX <span class="hljs-comment"># /dev/sdX: 整块磁盘</span>
+</code></pre>
+<ol start="3">
+<li>EFI 启动安装引导</li>
+</ol>
+<ul>
+<li>挂载 EFI 系统分区</li>
+</ul>
+<pre><code class="hljs language-bash">mkdeir /boot/efi
+mount /dev/efi /boot/efi
+</code></pre>
+<ul>
+<li>安装引导</li>
+</ul>
+<pre><code class="hljs language-bash">grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=Arch
+</code></pre>
+<ul>
+<li>多系统</li>
+</ul>
+<pre><code class="hljs language-bash">pacman -S os-prober
+
+vim /etc/default/grub
+
+<span class="hljs-comment"># 取消以下代码注释，没有的话在末尾添加</span>
+GRUB_DISABLE_OS_PROBER=<span class="hljs-literal">false</span>
+</code></pre>
+<p><strong>注意：</strong>如果检测不到 Windows 的分区，可尝试安装 NTFS-3G。</p>
+<ol start="4">
+<li>生成配置文件</li>
+</ol>
+<pre><code class="hljs language-bash">grub-mkconfig -o /boot/grub/grub.cfg
+</code></pre>
+<h2 id="重启">重启</h2>
+<p>退出 chroot 环境</p>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">exit</span>
+umount -R /mnt
+reboot
+</code></pre>
+</div>
         
       </div>
     </div>
