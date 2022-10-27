@@ -10,7 +10,7 @@ for (let i = 0; i < objects.length; i++) {
 }
 
 const pushAliOSS = async (name, path) => {
-  client.put(name, normalize(path));
+  await client.put(name, normalize(path));
 };
 
 export { pushAliOSS };
