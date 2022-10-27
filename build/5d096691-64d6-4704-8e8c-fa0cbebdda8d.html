@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>webpack + vue 企业级项目搭建</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        
+        <div>
+          <p class="menu">Git</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="04dd9b66-21a0-4022-ace2-88128581e905.html">
+                Git 学习
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">JavaScript</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="7780599f-93a0-4043-bd09-d501fe5c0957.html">
+                JavaScript异步处理
+              </a>
+              
+              <a class="menu-item" href="f13ba8a9-5097-4af1-8b45-0992d1381622.html">
+                JavaScript数组
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">linux</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="2bdc5f72-7bc5-45e1-843c-81374ef92b8d.html">
+                ArchLinux安装美化之系统安装
+              </a>
+              
+              <a class="menu-item" href="b9ed9c39-de85-47dc-990f-08a46225027c.html">
+                Linux 压缩和解压缩命令
+              </a>
+              
+              <a class="menu-item" href="24508bb6-1c34-45e7-809f-ce09a3046113.html">
+                Linux 网络配置
+              </a>
+              
+              <a class="menu-item" href="a98d50e4-6cc4-47b8-a564-4ae0d707db1e.html">
+                nvm 安装与配置
+              </a>
+              
+              <a class="menu-item" href="604445db-1794-4ef0-9c9c-1059c56437ba.html">
+                oh-my-zsh 安装与配置
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">MongDB</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="18fb8215-7617-4cf8-b22b-9957f66c5893.html">
+                MongoDB基本使用
+              </a>
+              
+              <a class="menu-item" href="ec8c8c89-6775-4f80-bae5-83b59b50dac0.html">
+                MongoDB权限配置
+              </a>
+              
+              <a class="menu-item" href="8647bad3-78b4-4f07-8fff-35e9db7d8da6.html">
+                MongoDB进阶
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">Nginx</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="50848776-a5be-4d0b-86d3-62e82c5d842a.html">
+                Nginx安装
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">npm</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="b24236c6-e4dd-422a-8a47-246a1c4a1ef8.html">
+                npm-workspace
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">PowerShell</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="9907b1a0-41e4-4117-881d-483ca01607fa.html">
+                PoserShell 学习
+              </a>
+              
+              <a class="menu-item" href="f1ebd3f6-0685-4af2-8e8b-fbfd87a8b06f.html">
+                powershell 命令
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">rust</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="ce04efaf-8b85-4342-81fb-80334e7f4a62.html">
+                Rust 基础
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">TypeScript</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="74401e20-7f5a-4cd6-a26c-6223819f96ca.html">
+                TypeScript 基本项目搭建
+              </a>
+              
+              <a class="menu-item" href="0ebcd04c-8c38-4e13-bac6-4c1c70151b02.html">
+                TypeScript类型与配置笔记
+              </a>
+              
+              <a class="menu-item" href="4e695865-22c1-43f3-94d2-98e7e1582854.html">
+                TypeScript面向对象笔记
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">vscode</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="d0d823db-24ce-4e71-b8f0-390fbbd15a75.html">
+                vscode配置
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">vue3</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="fa85d9a8-1069-4342-81d9-e0ff0ee25f71.html">
+                Composition API(其它部分)
+              </a>
+              
+              <a class="menu-item" href="6904e5fe-e1ee-4fa9-b4fb-ffd7c443235a.html">
+                Composition API(常用部分)
+              </a>
+              
+              <a class="menu-item" href="fc217708-8e1c-42b7-968e-fba530aa0d64.html">
+                Vue3 新组件
+              </a>
+              
+              <a class="menu-item" href="08d2855d-2fba-4544-887b-15cedbbabe4e.html">
+                vue3快速上手
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">webpack</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="c81657b3-b382-4a26-8c1a-fa4741f44861.html">
+                vue+ts+eslint前端项目搭建
+              </a>
+              
+              <a class="menu-item" href="5d096691-64d6-4704-8e8c-fa0cbebdda8d.html">
+                webpack + vue 企业级项目搭建
+              </a>
+              
+              <a class="menu-item" href="0b88c60d-38ba-4bd0-a3c9-7b6bf0d1f62e.html">
+                webpack
+              </a>
+              
+              <a class="menu-item" href="302d11a7-d295-4ba0-879f-63779df8c279.html">
+                webpack配置
+              </a>
+              
+              <a class="menu-item" href="4716ec92-4f87-4733-bfa4-37353175552c.html">
+                前端常用
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">Windows</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="4c96ec1d-6e1b-405a-a01c-b693020edb93.html">
+                Windows Terminal设置代理
+              </a>
+              
+              <a class="menu-item" href="06f75a60-76b5-4e72-a820-3325800d9d89.html">
+                Windows安装优化
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">其它</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="cbcd108e-b08f-4b89-92ad-213b10b18086.html">
+                mustache模板引擎
+              </a>
+              
+              <a class="menu-item" href="3d1dda8b-67c9-4a2b-b984-3d60e59cf509.html">
+                双向数据绑定
+              </a>
+              
+              <a class="menu-item" href="83b423b0-396d-4753-827f-bb9fa110a4e9.html">
+                抽象语法树
+              </a>
+              
+              <a class="menu-item" href="e90b0ae2-c418-4470-82c7-5af9f11aea76.html">
+                虚拟DOM与diff算法
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">打包构建工具</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="2f7bc079-6ab0-4423-b805-d7fb542fbda3.html">
+                Grunt
+              </a>
+              
+              <a class="menu-item" href="b66c16d5-e252-4f28-a58c-4d9bc16c313a.html">
+                Gulp
+              </a>
+              
+              <a class="menu-item" href="db851e7e-8714-449f-9460-91b814d18eb3.html">
+                Rollup
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="content">
+        
+        <div><h1 id="webpack--vue-企业级项目搭建">webpack + vue 企业级项目搭建</h1>
+<blockquote>
+<p>技术选型：typescript + webpack + vue + vue-router + pinia + axios + sass + eslint + prettier</p>
+</blockquote>
+<h2 id="初始化项目">初始化项目</h2>
+<pre><code class="hljs language-bash">npm init -y
+git init -b main
+</code></pre>
+<ul>
+<li>创建 <code>.gitignore</code>文件。（<a href="https://git-scm.com/docs/gitignore">忽略规则</a>自行添加）<pre><code>+ node_modules
++ dist
++ .eslintcache
++ .npm
+</code></pre>
+</li>
+<li>创建 <code>README.md</code>项目说明文件。（内容根据项目自己添加）</li>
+</ul>
+<h2 id="webpack-安装配置">webpack 安装配置</h2>
+<pre><code class="hljs language-bash">npm install -D webpack webpack-cli webpack-dev-server webpack-merge
+</code></pre>
+<ul>
+<li><code>webpack</code>: webpack 打包工具主程序。</li>
+<li><code>webpack-cli</code>: 解析 webpack 配置文件。</li>
+<li><code>webpack-dev-server</code>: webpack 构建开发服务器。</li>
+<li><code>webpack-merge</code>: 合并 webpack 配置文件。</li>
+</ul>
+<h3 id="创建-webpack-配置文件">创建 webpack 配置文件</h3>
+<ul>
+<li><code>config/webpack.common.ts</code>: webpack 基本配置。</li>
+<li><code>config/webpack.dev.ts</code>: webpack 开发环境配置。</li>
+<li><code>config/webpack.prod.ts</code>: webpack 生产环境配置。</li>
+</ul>
+<p><strong>注意：</strong> 由于 webpack 配置文件使用 ts，所以得安装 <code>typescript ts-node @types/node @types/webpack</code>。</p>
+<pre><code class="hljs language-bash">npm install -D typescript ts-node @types/node @types/webpack
+</code></pre>
+<ul>
+<li><code>typescript</code>: typescript。</li>
+<li><code>ts-node</code>: 不需要编译成 <code>JavaScript</code>，能直接执行<code>.ts</code>文件。</li>
+<li><code>@types/node</code>: node 类型声明文件。</li>
+<li><code>@types/webpack</code>: webpack 类型声明文件。</li>
+</ul>
+<h3 id="webpack-基本配置">webpack 基本配置</h3>
+<ul>
+<li><p><code>config/webpack.common.ts</code></p>
+<pre><code class="hljs language-ts">+ <span class="hljs-keyword">import</span> path <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;node:path&#x27;</span>;
++ <span class="hljs-keyword">import</span> { <span class="hljs-title class_">Configuration</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;webpack&#x27;</span>;
++ <span class="hljs-keyword">const</span> <span class="hljs-attr">common</span>: <span class="hljs-title class_">Configuration</span> = {
++   <span class="hljs-attr">context</span>: path.<span class="hljs-title function_">resolve</span>(__dirname, <span class="hljs-string">&#x27;..&#x27;</span>),
++   <span class="hljs-attr">entry</span>: <span class="hljs-string">&#x27;./src/main.ts&#x27;</span>,
++ };
++ <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> common;
+</code></pre>
+</li>
+<li><p><code>config/webpack.dev.ts</code></p>
+<pre><code class="hljs language-ts">+ <span class="hljs-keyword">import</span> { <span class="hljs-title class_">Configuration</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;webpack&#x27;</span>;
++ <span class="hljs-keyword">import</span> { merge } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;webpack-merge&#x27;</span>;
++ <span class="hljs-keyword">import</span> <span class="hljs-string">&#x27;webpack-dev-server&#x27;</span>;
++ <span class="hljs-keyword">import</span> common <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./webpack.common&#x27;</span>;
++ <span class="hljs-keyword">const</span> <span class="hljs-attr">devConfig</span>: <span class="hljs-title class_">Configuration</span> = <span class="hljs-title function_">merge</span>(common, {
++   <span class="hljs-attr">mode</span>: <span class="hljs-string">&#x27;development&#x27;</span>,
++   <span class="hljs-attr">devtool</span>: <span class="hljs-string">&#x27;source-map&#x27;</span>,
++   <span class="hljs-attr">devServer</span>: {
++     <span class="hljs-attr">port</span>: <span class="hljs-number">8899</span>,
++     <span class="hljs-attr">open</span>: <span class="hljs-literal">true</span>,
++     <span class="hljs-attr">hot</span>: <span class="hljs-string">&#x27;only&#x27;</span>,
++   },
++ });
++ <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> devConfig;
+</code></pre>
+</li>
+<li><p><code>config/webpack.prod.ts</code></p>
+<pre><code class="hljs language-ts">+ <span class="hljs-keyword">import</span> path <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;node:path&#x27;</span>;
++ <span class="hljs-keyword">import</span> { <span class="hljs-title class_">Configuration</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;webpack&#x27;</span>;
++ <span class="hljs-keyword">import</span> { merge } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;webpack-merge&#x27;</span>;
++ <span class="hljs-keyword">import</span> common <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./webpack.common&#x27;</span>;
++ <span class="hljs-keyword">const</span> <span class="hljs-attr">pordConfig</span>: <span class="hljs-title class_">Configuration</span> = <span class="hljs-title function_">merge</span>(common, {
++   <span class="hljs-attr">mode</span>: <span class="hljs-string">&#x27;production&#x27;</span>,
++   <span class="hljs-attr">output</span>: {
++     <span class="hljs-attr">path</span>: path.<span class="hljs-title function_">resolve</span>(__dirname, <span class="hljs-string">&#x27;../dist&#x27;</span>),
++     <span class="hljs-attr">filename</span>: <span class="hljs-string">&#x27;js/[name].[hash:8].js&#x27;</span>,
++     <span class="hljs-attr">clean</span>: <span class="hljs-literal">true</span>,
++     <span class="hljs-attr">publicPath</span>: <span class="hljs-string">&#x27;./&#x27;</span>,
++   },
++ });
++ <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> pordConfig;
+</code></pre>
+</li>
+</ul>
+<h3 id="packagejson-中添加命令"><code>package.json</code> 中添加命令</h3>
+<pre><code class="hljs language-json"><span class="hljs-attr">&quot;scripts&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+ + <span class="hljs-attr">&quot;dev&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;webpack server --config config/webpack.dev.ts&quot;</span><span class="hljs-punctuation">,</span>
+ + <span class="hljs-attr">&quot;build&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;webpack --config config/webpack.prod.ts&quot;</span>
+<span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+</code></pre>
+<h2 id="创建项目基本目录">创建项目基本目录</h2>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">mkdir</span> public
+<span class="hljs-built_in">mkdir</span> src/components
+<span class="hljs-built_in">mkdir</span> src/assets/fonts
+<span class="hljs-built_in">mkdir</span> src/assets/scss
+<span class="hljs-built_in">mkdir</span> src/assets/images
+<span class="hljs-built_in">mkdir</span> src/utils
+<span class="hljs-built_in">mkdir</span> src/routers
+<span class="hljs-built_in">mkdir</span> src/modules
+</code></pre>
+<h2 id="添加路径别名">添加路径别名</h2>
+<ul>
+<li><code>config/webpack.common.ts</code><pre><code class="hljs language-ts"><span class="hljs-keyword">const</span> <span class="hljs-attr">common</span>: <span class="hljs-title class_">Configuration</span> = {
++  <span class="hljs-attr">resolve</span>: {
++    <span class="hljs-attr">alias</span>: {
++      <span class="hljs-string">&#x27;@&#x27;</span>: <span class="hljs-string">&#x27;/src&#x27;</span>,
++      <span class="hljs-string">&#x27;@img&#x27;</span>: <span class="hljs-string">&#x27;/src/assets/images&#x27;</span>,
++      <span class="hljs-string">&#x27;@utils&#x27;</span>: <span class="hljs-string">&#x27;/src/utils&#x27;</span>,
++      <span class="hljs-string">&#x27;@comp&#x27;</span>: <span class="hljs-string">&#x27;/src/components&#x27;</span>,
++    },
++    <span class="hljs-attr">extensions</span>: [<span class="hljs-string">&#x27;.vue&#x27;</span>, <span class="hljs-string">&#x27;.ts&#x27;</span>, <span class="hljs-string">&#x27;.tsx&#x27;</span>, <span class="hljs-string">&#x27;...&#x27;</span>],
++  },
+}
+</code></pre>
+</li>
+</ul>
+<h2 id="处理-vue">处理 vue</h2>
+<h3 id="安装依赖">安装依赖</h3>
+<pre><code class="hljs language-bash">npm install vue@next
+npm install -D vue-loader@next
+</code></pre>
+<ul>
+<li><code>vue@next</code>: 最新版本 vue。</li>
+<li><code>vue-loader@next</code>: 最新版本的 <code>vue-loader</code>。在 vue3 之前需要安装 <code>vue-template-compiler</code>。vue3 之后需要安装<code>@vue/compiler-sfc</code></li>
+</ul>
+<p><strong>注意：</strong> vue 从 3.2.13+ 开始，<code>@vue/compiler-sfc</code>已经作为 vue 的依赖包含在内。所以无需显示安装。</p>
+<h3 id="添加-vue-配置">添加 vue 配置</h3>
+<ul>
+<li><code>config/webpack.common.ts</code><pre><code class="hljs language-ts">+ <span class="hljs-keyword">import</span> { <span class="hljs-title class_">VueLoaderPlugin</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vue-loader&#x27;</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-attr">common</span>: <span class="hljs-title class_">Configuration</span> = {
++   <span class="hljs-attr">module</span>: {
++     <span class="hljs-attr">rules</span>: [
++       {
++         <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.vue$/i</span>,
++         <span class="hljs-attr">loader</span>: <span class="hljs-string">&#x27;vue-loader&#x27;</span>,
++       },
++     ],
++   },
++   <span class="hljs-attr">plugins</span>: [
++      <span class="hljs-keyword">new</span> <span class="hljs-title class_">VueLoaderPlugin</span>()
++   ],
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="添加-vue-声明文件">添加 vue 声明文件</h3>
+<ul>
+<li><code>src/shims-vue.d.ts</code><pre><code class="hljs language-ts">+ <span class="hljs-keyword">declare</span> <span class="hljs-variable language_">module</span> <span class="hljs-string">&#x27;*.vue&#x27;</span> {
++   <span class="hljs-keyword">import</span> { defineComponent } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vue&#x27;</span>;
++   <span class="hljs-keyword">const</span> <span class="hljs-title class_">Component</span>: <span class="hljs-title class_">ReturnType</span>&lt;<span class="hljs-keyword">typeof</span> defineComponent&gt;;
++   <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">Component</span>;
++ }
+</code></pre>
+</li>
+</ul>
+<h3 id="添加-vue-主文件">添加 vue 主文件</h3>
+<ul>
+<li><p><code>src/App.vue</code></p>
+<pre><code class="hljs language-vue">&lt;template&gt;
+  &lt;h2&gt;Hello Vue&lt;/h2&gt;
+&lt;/template&gt;
+</code></pre>
+</li>
+<li><p><code>src/main.ts</code></p>
+<pre><code class="hljs language-ts">+  <span class="hljs-keyword">import</span> { createApp } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vue&#x27;</span>;
++  <span class="hljs-keyword">import</span> <span class="hljs-title class_">App</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@/App.vue&#x27;</span>;
++  <span class="hljs-keyword">const</span> app = <span class="hljs-title function_">createApp</span>(<span class="hljs-title class_">App</span>);
++  app.<span class="hljs-title function_">mount</span>(<span class="hljs-string">&#x27;#app&#x27;</span>);
+</code></pre>
+</li>
+</ul>
+<h3 id="添加-html，自动加载编译后的-js-文件">添加 html，自动加载编译后的 js 文件</h3>
+<ul>
+<li><p>安装依赖</p>
+<pre><code class="hljs language-bash">npm install -D html-webpack-plugin
+</code></pre>
+</li>
+<li><p>添加 html 模板 <code>public/index.html</code></p>
+<pre><code class="hljs language-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;cn&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;icon&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&lt;%= BASE_URL %&gt;favicon.ico&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&lt;%= htmlWebpackPlugin.options.title %&gt;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>添加配置文件 <code>config/webpack.config.ts</code></p>
+<pre><code class="hljs language-ts">-  <span class="hljs-keyword">import</span> { <span class="hljs-title class_">Configuration</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;webpack&#x27;</span>;
++  <span class="hljs-keyword">import</span> { <span class="hljs-title class_">Configuration</span>, <span class="hljs-title class_">DefinePlugin</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;webpack&#x27;</span>;
++  <span class="hljs-keyword">import</span> <span class="hljs-title class_">HtmlWebpackPlugin</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;html-webpack-plugin&#x27;</span>;
+<span class="hljs-attr">plugins</span>: [
++  <span class="hljs-keyword">new</span> <span class="hljs-title class_">DefinePlugin</span>({
++    <span class="hljs-attr">BASE_URL</span>: <span class="hljs-string">&#x27;&quot;./&quot;&#x27;</span>,
++  }),
++  <span class="hljs-keyword">new</span> <span class="hljs-title class_">HtmlWebpackPlugin</span>({
++    <span class="hljs-attr">title</span>: <span class="hljs-string">&#x27;CV 操作员&#x27;</span>,
++    <span class="hljs-attr">template</span>: <span class="hljs-string">&#x27;./public/index.html&#x27;</span>,
++  }),
+],
+</code></pre>
+</li>
+</ul>
+<h2 id="处理-ts、tsx">处理 ts、tsx</h2>
+<blockquote>
+<p>对于 ts 代码，使用 <code>ts-loader</code> 进行编译，并进行类型校验，然后使用 <code>babel-loader</code> 按照兼容的浏览器添加兼容代码。</p>
+<p>对于 tsx 代码 则直接使用 <code>babel-loader</code> 进行编译，然后添加兼容代码，并使用 <code>eslint</code> 进行类型校验和语法校验。</p>
+</blockquote>
+<h3 id="安装依赖-1">安装依赖</h3>
+<pre><code class="hljs language-bash">npm install -D babel-loader @babel/core @babel/preset-env core-js @babel/preset-typescript @vue/babel-plugin-jsx babel-plugin-transform-remove-console babel-plugin-transform-remove-debugger
+</code></pre>
+<ul>
+<li><code>@babel/core</code>: babel 核心功能。</li>
+<li><code>@babel/preset-env</code>: babel 默认预设。</li>
+<li><code>core-js</code>: babel polyfill。</li>
+<li><code>@babel/preset-typescript</code>: babel typescript 预设。</li>
+<li><code>@vue/babel-plugin-jsx</code>: 解析 vue 中的 tsx。</li>
+<li><code>babel-plugin-transform-remove-console</code>: 移除代码中的 console。</li>
+<li><code>babel-plugin-transform-remove-debugger</code>: 移除代码中的 debugger。</li>
+</ul>
+<h3 id="添加-typescript-配置文件">添加 typescript 配置文件</h3>
+<ul>
+<li><code>tsconfig.json</code><pre><code class="hljs language-json">+   <span class="hljs-punctuation">{</span>
++     <span class="hljs-attr">&quot;compilerOptions&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
++       <span class="hljs-attr">&quot;module&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;esnext&quot;</span><span class="hljs-punctuation">,</span>
++       <span class="hljs-attr">&quot;target&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;esnext&quot;</span><span class="hljs-punctuation">,</span>
++       <span class="hljs-attr">&quot;strict&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
++       <span class="hljs-attr">&quot;esModuleInterop&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
++       <span class="hljs-attr">&quot;allowSyntheticDefaultImports&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
++       <span class="hljs-attr">&quot;forceConsistentCasingInFileNames&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
++       <span class="hljs-attr">&quot;skipLibCheck&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
++       <span class="hljs-attr">&quot;experimentalDecorators&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
++       <span class="hljs-attr">&quot;moduleResolution&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;node&quot;</span><span class="hljs-punctuation">,</span>
++       <span class="hljs-attr">&quot;baseUrl&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;.&quot;</span><span class="hljs-punctuation">,</span>
++       <span class="hljs-attr">&quot;jsx&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;preserve&quot;</span><span class="hljs-punctuation">,</span>
++       <span class="hljs-attr">&quot;sourceMap&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span>
++     <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
++     <span class="hljs-attr">&quot;ts-node&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
++       <span class="hljs-attr">&quot;compilerOptions&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
++         <span class="hljs-attr">&quot;module&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;CommonJS&quot;</span>
++       <span class="hljs-punctuation">}</span>
++     <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
++     <span class="hljs-attr">&quot;paths&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
++       <span class="hljs-attr">&quot;@/*&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;src/*&quot;</span><span class="hljs-punctuation">,</span>
++       <span class="hljs-attr">&quot;@img/*&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;src/assets/images/*&quot;</span><span class="hljs-punctuation">,</span>
++       <span class="hljs-attr">&quot;@utils/*&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;src/utils/*&quot;</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
++       <span class="hljs-attr">&quot;@comp/*&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;src/components/*&quot;</span><span class="hljs-punctuation">]</span>
++     <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
++     <span class="hljs-attr">&quot;include&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;src/**/*.ts&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;src/**/*.vue&quot;</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
++     <span class="hljs-attr">&quot;exclude&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;node_modules&quot;</span><span class="hljs-punctuation">]</span>
++   <span class="hljs-punctuation">}</span>
+</code></pre>
+</li>
+<li><code>module</code>: 指定生成哪个模块系统代码。</li>
+<li><code>target</code>: 指定 ECMAScript 目标版本。</li>
+<li><code>strict</code>: 启用所有严格类型检查选项。开启严格模式，默认启用一下选项：</li>
+<li><code>noImplicitAny</code>: 在表达式和声明上有隐含的 any 类型时报错。<a href="https://www.typescriptlang.org/zh/tsconfig#noImplicitAny">参考地址</a></li>
+<li><code>noImplicitThis</code>: 当 this 表达式的值为 any 类型的时候，生成一个错误。<a href="https://www.typescriptlang.org/zh/tsconfig#noImplicitThis">参考地址</a></li>
+<li><code>alwaysStrict</code>: 为每个源文件生成 <code>use strict</code>语句。<a href="https://www.typescriptlang.org/zh/tsconfig#alwaysStrict">参考地址</a></li>
+<li><code>strictNullChecks</code>: null 和 undefined 拥有单独类型。<a href="https://www.typescriptlang.org/zh/tsconfig#strictNullChecks">参考地址</a></li>
+<li><code>strictFunctionTypes</code>: 检测函数的子类子类型。<a href="https://www.typescriptlang.org/zh/tsconfig#strictFunctionTypes">参考地址</a>，<a href="https://zh.wikipedia.org/wiki/%E5%AD%90%E7%B1%BB%E5%9E%8B">参考地址</a></li>
+<li><code>strictPropertyInitialization</code>: 设置为 true 时，当构造函数中声明但未设置类属性时报错。<a href="https://www.typescriptlang.org/zh/tsconfig#strictPropertyInitialization">参考地址</a></li>
+<li><code>strictBindCallApply</code>: 检测 <code>call</code>、<code>bind</code>、<code>apply</code>调用的参数是否正确。<a href="https://www.typescriptlang.org/zh/tsconfig#strictBindCallApply">参考地址</a></li>
+<li><code>useUnknownInCatchVariables</code>: 在异常捕获中的值设置成 <code>unknown</code> 类型。<a href="https://www.typescriptlang.org/zh/tsconfig#useUnknownInCatchVariables">参考地址</a></li>
+<li><code>esModuleInterop</code>: 开启 esModuleInterop 选项将会修复 TypeScript 转译中的这两个问题。</li>
+<li><code>allowSyntheticDefaultImports</code>: 允许从没有设置默认导出的模块中默认导入。这并不影响代码的输出，仅为了类型检查。</li>
+<li><code>forceConsistentCasingInFileNames</code>: 禁止对同一个文件的不一致的引用。</li>
+<li><code>skipLibCheck</code>:忽略所有的声明文件（ *.d.ts）的类型检查。</li>
+<li><code>experimentalDecorators</code>: 启用实验性的 ES 装饰器。</li>
+<li><code>moduleResolution</code>: 指定模块解析策略。</li>
+</ul>
+<h3 id="添加-babel-配置文件">添加 babel 配置文件</h3>
+<ul>
+<li><p><code>babel.config.json</code></p>
+<pre><code class="hljs language-json">+   <span class="hljs-punctuation">{</span>
++     <span class="hljs-attr">&quot;presets&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
++       <span class="hljs-punctuation">[</span>
++         <span class="hljs-string">&quot;@babel/preset-env&quot;</span><span class="hljs-punctuation">,</span>
++         <span class="hljs-punctuation">{</span>
++           <span class="hljs-attr">&quot;useBuiltIns&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;usage&quot;</span><span class="hljs-punctuation">,</span>
++           <span class="hljs-attr">&quot;corejs&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;3.22&quot;</span>
++         <span class="hljs-punctuation">}</span>
++       <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
++       <span class="hljs-punctuation">[</span>
++         <span class="hljs-string">&quot;@babel/preset-typescript&quot;</span><span class="hljs-punctuation">,</span>
++         <span class="hljs-punctuation">{</span>
++           <span class="hljs-attr">&quot;allExtensions&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
++           <span class="hljs-attr">&quot;isTSX&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span>
++         <span class="hljs-punctuation">}</span>
++       <span class="hljs-punctuation">]</span>
++     <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
++     <span class="hljs-attr">&quot;plugins&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;@vue/babel-plugin-jsx&quot;</span><span class="hljs-punctuation">]</span>
++   <span class="hljs-punctuation">}</span>
+</code></pre>
+</li>
+</ul>
+<h3 id="添加-browserslist-配置文件">添加 browserslist 配置文件</h3>
+<ul>
+<li><code>.browserslistrc</code><pre><code>+  &gt; 1%
++  last 2 version
++  not dead
+</code></pre>
+</li>
+</ul>
+<h3 id="修改-webpack-配置">修改 webpack 配置</h3>
+<ul>
+<li><p><code>webpack.common.ts</code></p>
+<pre><code class="hljs language-ts">+    <span class="hljs-attr">module</span>: {
++      <span class="hljs-attr">rules</span>: [
++        {
++          <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.ts$/i</span>,
++          <span class="hljs-attr">exclude</span>: <span class="hljs-regexp">/node_modules/</span>,
++          <span class="hljs-attr">use</span>: [
++            <span class="hljs-string">&#x27;babel-loader&#x27;</span>,
++             <span class="hljs-attr">loader</span>: <span class="hljs-string">&#x27;babel-loader&#x27;</span>,
++             <span class="hljs-attr">options</span>: {
++               <span class="hljs-attr">appendTsSuffixTo</span>: [<span class="hljs-regexp">/\.vue$/</span>],
++             },
++          ]
++        },
++      ],
++    },
+</code></pre>
+</li>
+<li><p><code>webpack.dev.ts</code></p>
+<pre><code class="hljs language-ts">+    <span class="hljs-attr">module</span>: {
++      <span class="hljs-attr">rules</span>: [
++        {
++          <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.tsx$/i</span>,
++          <span class="hljs-attr">exclude</span>: <span class="hljs-regexp">/node_modules/</span>,
++          <span class="hljs-attr">loader</span>: <span class="hljs-string">&#x27;babel-loader&#x27;</span>,
++        },
++      ],
++    },
+</code></pre>
+</li>
+<li><p><code>webpack.prod.ts</code></p>
+<pre><code class="hljs language-ts">+   <span class="hljs-attr">module</span>: {
++     <span class="hljs-attr">rules</span>: [
++       {
++         <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.tsx$/i</span>,
++         <span class="hljs-attr">exclude</span>: <span class="hljs-regexp">/node_modules/</span>,
++         <span class="hljs-attr">use</span>: [
++           {
++             <span class="hljs-attr">loader</span>: <span class="hljs-string">&#x27;babel-loader&#x27;</span>,
++             <span class="hljs-attr">options</span>: {
++               <span class="hljs-attr">plugins</span>: [
++                 [<span class="hljs-string">&#x27;transform-remove-console&#x27;</span>, { <span class="hljs-attr">exclude</span>: [<span class="hljs-string">&#x27;error&#x27;</span>, <span class="hljs-string">&#x27;warn&#x27;</span>] }],
++                 <span class="hljs-string">&#x27;transform-remove-debugger&#x27;</span>,
++               ],
++             },
++           },
++           {
++             <span class="hljs-attr">loader</span>: <span class="hljs-string">&#x27;ts-loader&#x27;</span>,
++             <span class="hljs-attr">options</span>: {
++               <span class="hljs-attr">appendTsxSuffixTo</span>: [<span class="hljs-regexp">/\.vue$/</span>],
++             },
++           },
++         ],
++       },
++       {
++         <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.ts$/i</span>,
++         <span class="hljs-attr">exclude</span>: <span class="hljs-regexp">/node_modules/</span>,
++         <span class="hljs-attr">use</span>: [
++           {
++             <span class="hljs-attr">loader</span>: <span class="hljs-string">&#x27;babel-loader&#x27;</span>,
++             <span class="hljs-attr">options</span>: {
++               <span class="hljs-attr">plugins</span>: [
++                 [<span class="hljs-string">&#x27;transform-remove-console&#x27;</span>, { <span class="hljs-attr">exclude</span>: [<span class="hljs-string">&#x27;error&#x27;</span>, <span class="hljs-string">&#x27;warn&#x27;</span>] }],
++                 <span class="hljs-string">&#x27;transform-remove-debugger&#x27;</span>,
++               ],
++             },
++           },
++           <span class="hljs-string">&#x27;ts-loader&#x27;</span>
++         ],
++       },
++     ],
++   },
+</code></pre>
+</li>
+</ul>
+<h2 id="处理-css-sass">处理 css sass</h2>
+<h3 id="安装依赖-2">安装依赖</h3>
+<pre><code class="hljs language-bash">npm install -D postcss postcss-loader postcss-preset-nev css-loader sass sass-loader css-minimizer-webpack-plugin mini-css-extract-plugin
+</code></pre>
+<ul>
+<li><code>postcss postcss-loader postcss-preset-env</code>: 处理 css 兼容。</li>
+<li><code>css-loader</code>: 处理 @import 和 url() 。</li>
+<li><code>sass, sass-loader</code>: 解析 cass。</li>
+<li><code>css-minimizer-webpack-plugin</code>: 优化和压缩 css。</li>
+<li><code>mini-css-extract-plugin</code>: 将 css 提取到单独的文件中。</li>
+</ul>
+<h3 id="修改配置文件">修改配置文件</h3>
+<ul>
+<li><code>config/webpack.common.ts</code><pre><code class="hljs language-ts">  <span class="hljs-attr">module</span>: {
+    <span class="hljs-attr">rules</span>: [
++      {
++        <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.(c|sa|sc)ss$/i</span>,
++        <span class="hljs-attr">use</span>: [
++          <span class="hljs-title class_">MiniCssExtractPlugin</span>.<span class="hljs-property">loader</span>,
++          {
++            <span class="hljs-attr">loader</span>: <span class="hljs-string">&#x27;css-loader&#x27;</span>,
++            <span class="hljs-attr">options</span>: {
++              <span class="hljs-attr">importLoaders</span>: <span class="hljs-number">2</span>,
++            },
++          },
++          <span class="hljs-string">&#x27;postcss-loader&#x27;</span>,
++          <span class="hljs-string">&#x27;sass-loader&#x27;</span>,
++        ],
++      },
+    ],
+  },
++  <span class="hljs-attr">optimization</span>: {
++    <span class="hljs-attr">minimizer</span>: [<span class="hljs-string">&#x27;...&#x27;</span>, <span class="hljs-keyword">new</span> <span class="hljs-title class_">CssMinimizerPlugin</span>()],
++  },
+  <span class="hljs-attr">plugins</span>: [
++    <span class="hljs-keyword">new</span> <span class="hljs-title class_">MiniCssExtractPlugin</span>({
++      <span class="hljs-attr">filename</span>: <span class="hljs-string">&#x27;css/[name].[hash:8].css&#x27;</span>,
++    }),
+  ],
+</code></pre>
+</li>
+</ul>
+<h2 id="处理资源文件">处理资源文件</h2>
+<h3 id="处理媒体文件">处理媒体文件</h3>
+<ul>
+<li><code>config/webpack.common.ts</code><pre><code class="hljs language-ts"><span class="hljs-attr">module</span>: {
+  <span class="hljs-attr">rules</span>: [
++    {
++      <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.(mp4|webm|ogg|mp3|wav|flac|aac)$/i</span>,
++      <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;asset&#x27;</span>,
++      <span class="hljs-attr">generator</span>: {
++        <span class="hljs-attr">filename</span>: <span class="hljs-string">&#x27;media/[name].[hash:8][ext]&#x27;</span>,
++      },
++    },
+  ];
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="处理图片文件">处理图片文件</h3>
+<ul>
+<li><code>config/webpack.common.ts</code><pre><code class="hljs language-ts"><span class="hljs-attr">module</span>: {
+  <span class="hljs-attr">rules</span>:[
++    {
++      <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.(png|jpe?g|gif|webp|svg)$/i</span>,
++      <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;asset&#x27;</span>,
++      <span class="hljs-attr">generator</span>: {
++        <span class="hljs-attr">filename</span>: <span class="hljs-string">&#x27;images/[name].[hash:8][ext]&#x27;</span>,
++      },
++      <span class="hljs-attr">parser</span>: {
++        <span class="hljs-attr">dataUrlCondition</span>: {
++          <span class="hljs-attr">maxSize</span>: <span class="hljs-number">10</span> * <span class="hljs-number">1024</span>,
++        },
++      },
++    },
+  ]
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="处理字体文件">处理字体文件</h3>
+<ul>
+<li><code>config/webpack.common.ts</code><pre><code class="hljs language-ts"><span class="hljs-attr">module</span>: {
+  <span class="hljs-attr">rules</span>: [
++    {
++      <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.(woff2?|eot|ttf|otf)$/i</span>,
++      <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;asset&#x27;</span>,
++      <span class="hljs-attr">generator</span>: {
++        <span class="hljs-attr">filename</span>: <span class="hljs-string">&#x27;fonts/[name].[hash:8][ext]&#x27;</span>,
++      },
++    },
+  ];
+}
+</code></pre>
+</li>
+</ul>
+<h2 id="处理公共文件">处理公共文件</h2>
+<p>项目打包后应该把一些公共的不需要处理的文件复制到打包后的目录下。</p>
+<h3 id="安装依赖-3">安装依赖</h3>
+<pre><code class="hljs language-bash">npm install -D copy-webpack-plugin
+</code></pre>
+<ul>
+<li><code>copy-webpack-plugin</code>: 将文件或者目录复制到生成目录。</li>
+</ul>
+<h3 id="修改配置文件-1">修改配置文件</h3>
+<ul>
+<li><code>config/webpack.prod.ts</code><pre><code class="hljs language-ts">  <span class="hljs-attr">plugins</span>: [
++    <span class="hljs-keyword">new</span> <span class="hljs-title class_">CopyWebpackPlugin</span>({
++      <span class="hljs-attr">patterns</span>: [
++        {
++          <span class="hljs-attr">from</span>: <span class="hljs-string">&#x27;public&#x27;</span>,
++          <span class="hljs-attr">globOptions</span>: {
++            <span class="hljs-attr">ignore</span>: [<span class="hljs-string">&#x27;**/index.html&#x27;</span>, <span class="hljs-string">&#x27;**/.DS_Store&#x27;</span>],
++          },
++        },
++      ],
++    }),
+  ],
+</code></pre>
+</li>
+</ul>
+<h2 id="eslist-校验">eslist 校验</h2>
+<blockquote>
+<p>在开发中，往往需要保证代码代码的准确性和统一性，所以需要添加 eslint 对代码进行风格校验。</p>
+<p>因为 eslint 没法解析 vue 所以还要添加一个 vue 的插件来处理 vue 文件。</p>
+</blockquote>
+<h3 id="安装依赖-4">安装依赖</h3>
+<pre><code class="hljs language-bash">npm install -D eslint eslint-webpack-plugin @typescript-eslint/parser @typescript-eslint/eslint-plugin  eslint-config-airbnb-base eslint-plugin-vue @babel/eslint-parser
+</code></pre>
+<ul>
+<li><code>eslint</code>:eslint 主程序。</li>
+<li><code>eslint-webpack-plugin</code>: webpack 的 eslint 插件。</li>
+<li><code>@typescript-eslint/parser @typescript-eslint/eslint-plugin </code>: eslint 的 ts 解析器。</li>
+<li><code>eslint-config-airbnb-base</code>: airbnb 代码建议。</li>
+<li><code>eslint-plugin-vue</code>: 解析 vue 文件。</li>
+<li><code>@babel/eslint-parser</code>: 解析 tsx。</li>
+</ul>
+<h3 id="修改配置文件-2">修改配置文件</h3>
+<ul>
+<li><p><code>.eslintrc.json</code></p>
+<pre><code class="hljs language-json">+   <span class="hljs-punctuation">{</span>
++     <span class="hljs-attr">&quot;env&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
++       <span class="hljs-attr">&quot;browser&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
++       <span class="hljs-attr">&quot;es2021&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span>
++     <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
++     <span class="hljs-attr">&quot;extends&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;plugin:vue/essential&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;airbnb-base&quot;</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
++     <span class="hljs-attr">&quot;parserOptions&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
++       <span class="hljs-attr">&quot;ecmaVersion&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;latest&quot;</span><span class="hljs-punctuation">,</span>
++       <span class="hljs-attr">&quot;parser&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
++         <span class="hljs-attr">&quot;ts&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;@typescript-eslint/parser&quot;</span><span class="hljs-punctuation">,</span>
++         <span class="hljs-attr">&quot;tsx&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;@babel/eslint-parser&quot;</span>
++       <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
++       <span class="hljs-attr">&quot;sourceType&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;module&quot;</span><span class="hljs-punctuation">,</span>
++       <span class="hljs-attr">&quot;ecmaFeatures&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
++         <span class="hljs-attr">&quot;tsx&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
++         <span class="hljs-attr">&quot;jsx&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span>
++       <span class="hljs-punctuation">}</span>
++     <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
++     <span class="hljs-attr">&quot;plugins&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;vue&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;@typescript-eslint&quot;</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
++     <span class="hljs-attr">&quot;rules&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><span class="hljs-punctuation">}</span>
++   <span class="hljs-punctuation">}</span>
+</code></pre>
+</li>
+<li><p><code>.eslintignore</code></p>
+<pre><code>+   node_modules
++   dist
++   !.*
++   *.d.ts
+</code></pre>
+</li>
+<li><p><code>config/webpack.common.ts</code></p>
+<pre><code class="hljs language-ts"><span class="hljs-attr">plugins</span>: [
++   <span class="hljs-keyword">new</span> <span class="hljs-title class_">EslintWebpackPlugin</span>({
++     <span class="hljs-attr">extensions</span>: [<span class="hljs-string">&#x27;ts&#x27;</span>, <span class="hljs-string">&#x27;tsx&#x27;</span>, <span class="hljs-string">&#x27;js&#x27;</span>, <span class="hljs-string">&#x27;vue&#x27;</span>],
++     <span class="hljs-attr">quiet</span>: <span class="hljs-literal">true</span>,
++   }),
+],
+</code></pre>
+</li>
+</ul>
+<h2 id="prettier-格式化">prettier 格式化</h2>
+<blockquote>
+<p>多人开发项目时为了保证代码格式化风格一致，需要安装 <code>prettier</code> 插件。</p>
+</blockquote>
+<h3 id="安装依赖-5">安装依赖</h3>
+<pre><code class="hljs language-bash">npm install -D prettier eslint-plugin-prettier eslint-config-prettier
+</code></pre>
+<h3 id="修改配置文件-3">修改配置文件</h3>
+<ul>
+<li><p><code>.prettirerc</code></p>
+<pre><code class="hljs language-JSON">+   <span class="hljs-punctuation">{</span>
++     <span class="hljs-attr">&quot;singleQuote&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
++     <span class="hljs-attr">&quot;trailingComma&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;all&quot;</span><span class="hljs-punctuation">,</span>
++     <span class="hljs-attr">&quot;printWidth&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">80</span><span class="hljs-punctuation">,</span>
++     <span class="hljs-attr">&quot;tabWidth&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">2</span><span class="hljs-punctuation">,</span>
++     <span class="hljs-attr">&quot;proseWrap&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;never&quot;</span><span class="hljs-punctuation">,</span>
++     <span class="hljs-attr">&quot;arrowParens&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;avoid&quot;</span><span class="hljs-punctuation">,</span>
++     <span class="hljs-attr">&quot;overrides&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
++       <span class="hljs-punctuation">{</span>
++         <span class="hljs-attr">&quot;files&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;.prettierrc&quot;</span><span class="hljs-punctuation">,</span>
++         <span class="hljs-attr">&quot;options&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
++           <span class="hljs-attr">&quot;parser&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;json&quot;</span>
++         <span class="hljs-punctuation">}</span>
++       <span class="hljs-punctuation">}</span>
++     <span class="hljs-punctuation">]</span>
++   <span class="hljs-punctuation">}</span>
+</code></pre>
+</li>
+<li><p><code>.eslintrc.json</code></p>
+<pre><code class="hljs language-json">    <span class="hljs-punctuation">{</span>
+-     <span class="hljs-attr">&quot;extends&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;plugin:vue/essential&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;airbnb-base&quot;</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
++     <span class="hljs-attr">&quot;extends&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;plugin:vue/essential&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;airbnb-base&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;prettier&quot;</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+-     <span class="hljs-attr">&quot;plugins&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;vue&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;@typescript-eslint&quot;</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
++     <span class="hljs-attr">&quot;plugins&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;vue&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;@typescript-eslint&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;prettier&quot;</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-punctuation">}</span>
+</code></pre>
+</li>
+</ul>
+<h2 id="跨平台代码风格统一">跨平台代码风格统一</h2>
+<blockquote>
+<p>同一个项目多个开发人员，不同平台，不同编辑器和 IDE 保持一致的编码风格。需要 vscode 安装 <code>EditorConfig for VS Code</code> 插件。</p>
+</blockquote>
+<h3 id="添加配置文件">添加配置文件</h3>
+<ul>
+<li><code>.editorconfig</code><pre><code>+   [*.{ts,tsx,vue,js,jsx}]
++   indent_style = space
++   indent_size = 2
++   end_of_line = lf
++   trim_trailing_whitespace = true
++   insert_final_newline = true
++   max_line_length = 80
++   charset = utf-8
+</code></pre>
+</li>
+</ul>
+<h2 id="router">router</h2>
+<blockquote>
+<p>路由使用 vue-router。路由规则根据根据项目中的模块自动生成。</p>
+</blockquote>
+<h3 id="安装依赖-6">安装依赖</h3>
+<pre><code class="hljs language-bash">npm install vue-router@next
+</code></pre>
+<h3 id="配置路由">配置路由</h3>
+<ul>
+<li><p><code>src/main.ts</code></p>
+<pre><code class="hljs language-ts">   <span class="hljs-keyword">import</span> <span class="hljs-title class_">App</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@/App.vue&#x27;</span>;
++  <span class="hljs-keyword">import</span> router <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./routers&#x27;</span>;
+   <span class="hljs-keyword">const</span> app = <span class="hljs-title function_">createApp</span>(<span class="hljs-title class_">App</span>);
++  app.<span class="hljs-title function_">use</span>(router);
+</code></pre>
+</li>
+<li><p><code>src/routers/index.ts</code></p>
+<pre><code class="hljs language-ts">+   <span class="hljs-keyword">import</span> {
++     createRouter,
++     createWebHashHistory,
++     <span class="hljs-title class_">RouteRecordRaw</span>,
++   } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vue-router&#x27;</span>;
++   <span class="hljs-keyword">const</span> <span class="hljs-attr">routes</span>: <span class="hljs-title class_">Array</span>&lt;<span class="hljs-title class_">RouteRecordRaw</span>&gt; = [
++     {
++       <span class="hljs-attr">path</span>: <span class="hljs-string">&#x27;/&#x27;</span>,
++       <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Main&#x27;</span>,
++       <span class="hljs-attr">component</span>: <span class="hljs-function">() =&gt;</span>
++         <span class="hljs-title function_">import</span>(<span class="hljs-comment">/* webpackChunkName: &quot;CVMain&quot; */</span> <span class="hljs-string">&#x27;@/modules/main/index.vue&#x27;</span>),
++       <span class="hljs-attr">children</span>: [
++         {
++           <span class="hljs-attr">path</span>: <span class="hljs-string">&#x27;/home&#x27;</span>,
++           <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Home&#x27;</span>,
++           <span class="hljs-attr">component</span>: <span class="hljs-function">() =&gt;</span>
++             <span class="hljs-title function_">import</span>(<span class="hljs-comment">/* webpackChunkName: &quot;CVHome&quot; */</span> <span class="hljs-string">&#x27;@/modules/home/index.vue&#x27;</span>),
++         },
++       ],
++     },
++     {
++       <span class="hljs-attr">path</span>: <span class="hljs-string">&#x27;/login&#x27;</span>,
++       <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Login&#x27;</span>,
++       <span class="hljs-attr">component</span>: <span class="hljs-function">() =&gt;</span>
++         <span class="hljs-title function_">import</span>(<span class="hljs-comment">/* webpackChunkName: &quot;CVLogin&quot; */</span> <span class="hljs-string">&#x27;@/modules/login/index.vue&#x27;</span>),
++     },
++   ];
++   <span class="hljs-keyword">const</span> router = <span class="hljs-title function_">createRouter</span>({
++     <span class="hljs-attr">history</span>: <span class="hljs-title function_">createWebHashHistory</span>(),
++     routes,
++   });
++   <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> router;
+</code></pre>
+</li>
+</ul>
+</div>
+        
+      </div>
+    </div>
+  </body>
+</html>

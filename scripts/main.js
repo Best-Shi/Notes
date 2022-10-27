@@ -95,7 +95,6 @@ const currentDate = () => {
 // 推送GitHub
 await execSync('git add .', { encoding: 'utf-8' });
 const commit = `git commit -m "自动提交: ${currentDate()}"`;
-console.log(111, commit);
 await execSync(commit, {
   encoding: 'utf-8',
 });

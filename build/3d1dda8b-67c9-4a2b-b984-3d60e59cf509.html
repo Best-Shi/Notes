@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>双向数据绑定</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        
+        <div>
+          <p class="menu">Git</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="04dd9b66-21a0-4022-ace2-88128581e905.html">
+                Git 学习
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">JavaScript</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="7780599f-93a0-4043-bd09-d501fe5c0957.html">
+                JavaScript异步处理
+              </a>
+              
+              <a class="menu-item" href="f13ba8a9-5097-4af1-8b45-0992d1381622.html">
+                JavaScript数组
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">linux</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="2bdc5f72-7bc5-45e1-843c-81374ef92b8d.html">
+                ArchLinux安装美化之系统安装
+              </a>
+              
+              <a class="menu-item" href="b9ed9c39-de85-47dc-990f-08a46225027c.html">
+                Linux 压缩和解压缩命令
+              </a>
+              
+              <a class="menu-item" href="24508bb6-1c34-45e7-809f-ce09a3046113.html">
+                Linux 网络配置
+              </a>
+              
+              <a class="menu-item" href="a98d50e4-6cc4-47b8-a564-4ae0d707db1e.html">
+                nvm 安装与配置
+              </a>
+              
+              <a class="menu-item" href="604445db-1794-4ef0-9c9c-1059c56437ba.html">
+                oh-my-zsh 安装与配置
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">MongDB</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="18fb8215-7617-4cf8-b22b-9957f66c5893.html">
+                MongoDB基本使用
+              </a>
+              
+              <a class="menu-item" href="ec8c8c89-6775-4f80-bae5-83b59b50dac0.html">
+                MongoDB权限配置
+              </a>
+              
+              <a class="menu-item" href="8647bad3-78b4-4f07-8fff-35e9db7d8da6.html">
+                MongoDB进阶
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">Nginx</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="50848776-a5be-4d0b-86d3-62e82c5d842a.html">
+                Nginx安装
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">npm</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="b24236c6-e4dd-422a-8a47-246a1c4a1ef8.html">
+                npm-workspace
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">PowerShell</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="9907b1a0-41e4-4117-881d-483ca01607fa.html">
+                PoserShell 学习
+              </a>
+              
+              <a class="menu-item" href="f1ebd3f6-0685-4af2-8e8b-fbfd87a8b06f.html">
+                powershell 命令
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">rust</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="ce04efaf-8b85-4342-81fb-80334e7f4a62.html">
+                Rust 基础
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">TypeScript</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="74401e20-7f5a-4cd6-a26c-6223819f96ca.html">
+                TypeScript 基本项目搭建
+              </a>
+              
+              <a class="menu-item" href="0ebcd04c-8c38-4e13-bac6-4c1c70151b02.html">
+                TypeScript类型与配置笔记
+              </a>
+              
+              <a class="menu-item" href="4e695865-22c1-43f3-94d2-98e7e1582854.html">
+                TypeScript面向对象笔记
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">vscode</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="d0d823db-24ce-4e71-b8f0-390fbbd15a75.html">
+                vscode配置
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">vue3</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="fa85d9a8-1069-4342-81d9-e0ff0ee25f71.html">
+                Composition API(其它部分)
+              </a>
+              
+              <a class="menu-item" href="6904e5fe-e1ee-4fa9-b4fb-ffd7c443235a.html">
+                Composition API(常用部分)
+              </a>
+              
+              <a class="menu-item" href="fc217708-8e1c-42b7-968e-fba530aa0d64.html">
+                Vue3 新组件
+              </a>
+              
+              <a class="menu-item" href="08d2855d-2fba-4544-887b-15cedbbabe4e.html">
+                vue3快速上手
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">webpack</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="c81657b3-b382-4a26-8c1a-fa4741f44861.html">
+                vue+ts+eslint前端项目搭建
+              </a>
+              
+              <a class="menu-item" href="5d096691-64d6-4704-8e8c-fa0cbebdda8d.html">
+                webpack + vue 企业级项目搭建
+              </a>
+              
+              <a class="menu-item" href="0b88c60d-38ba-4bd0-a3c9-7b6bf0d1f62e.html">
+                webpack
+              </a>
+              
+              <a class="menu-item" href="302d11a7-d295-4ba0-879f-63779df8c279.html">
+                webpack配置
+              </a>
+              
+              <a class="menu-item" href="4716ec92-4f87-4733-bfa4-37353175552c.html">
+                前端常用
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">Windows</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="4c96ec1d-6e1b-405a-a01c-b693020edb93.html">
+                Windows Terminal设置代理
+              </a>
+              
+              <a class="menu-item" href="06f75a60-76b5-4e72-a820-3325800d9d89.html">
+                Windows安装优化
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">其它</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="cbcd108e-b08f-4b89-92ad-213b10b18086.html">
+                mustache模板引擎
+              </a>
+              
+              <a class="menu-item" href="3d1dda8b-67c9-4a2b-b984-3d60e59cf509.html">
+                双向数据绑定
+              </a>
+              
+              <a class="menu-item" href="83b423b0-396d-4753-827f-bb9fa110a4e9.html">
+                抽象语法树
+              </a>
+              
+              <a class="menu-item" href="e90b0ae2-c418-4470-82c7-5af9f11aea76.html">
+                虚拟DOM与diff算法
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">打包构建工具</p>
+          <ul>
+            <li>
+              
+              <a class="menu-item" href="2f7bc079-6ab0-4423-b805-d7fb542fbda3.html">
+                Grunt
+              </a>
+              
+              <a class="menu-item" href="b66c16d5-e252-4f28-a58c-4d9bc16c313a.html">
+                Gulp
+              </a>
+              
+              <a class="menu-item" href="db851e7e-8714-449f-9460-91b814d18eb3.html">
+                Rollup
+              </a>
+              
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="content">
+        
+        <div><h1 id="双向数据绑定原理">双向数据绑定原理</h1>
+<h2 id="vue-数据响应式原理：">vue 数据响应式原理：</h2>
+<h2 id="mvvm-模式：">mvvm 模式：</h2>
+<blockquote>
+<p>数据变化视图会跟着变化。</p>
+</blockquote>
+<h2 id="侵入式与非侵入式：">侵入式与非侵入式：</h2>
+<blockquote>
+<p>侵入式需要调用视图更新函数，进行数据赋值与视图更新。</p>
+<p>非侵入式不需要调用任何函数，只要进行数据更新，视图就会跟着更新。</p>
+</blockquote>
+<p><strong>侵入式：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// react</span>
+<span class="hljs-variable language_">this</span>.<span class="hljs-title function_">setState</span>({
+    <span class="hljs-attr">a</span>: <span class="hljs-variable language_">this</span>.<span class="hljs-property">state</span>.<span class="hljs-property">a</span> + <span class="hljs-number">1</span>,
+});
+
+<span class="hljs-comment">// 小程序</span>
+<span class="hljs-variable language_">this</span>.<span class="hljs-title function_">setData</span>({
+    <span class="hljs-attr">a</span>: <span class="hljs-variable language_">this</span>.<span class="hljs-property">data</span>.<span class="hljs-property">a</span> + <span class="hljs-number">1</span>,
+});
+</code></pre>
+<p><strong>非侵入式：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// vue</span>
+<span class="hljs-variable language_">this</span>.<span class="hljs-property">a</span> + <span class="hljs-number">1</span>;
+</code></pre>
+<h2 id="objectdefineproperty方法学习">Object.defineProperty()方法学习</h2>
+<h3 id="objectdefineproperty">Object.defineProperty()</h3>
+<p>该方法会直接在一个对象上定义一个新属性，或者修改一个对象的现有属性，并返回此对象。</p>
+<p><strong>参数：</strong></p>
+<ul>
+<li>obj：需要定义的对象。</li>
+<li>prop：需要定义或修改的属性名。</li>
+<li>descriptor：要定义或修改的属性描述。<ul>
+<li>configurable：该属性是否可配置（默认 false）。</li>
+<li>enumerable：该属性是否可枚举（默认 false）。</li>
+<li>writable：该属性是否可写入（默认 false）。</li>
+<li>value：该属性的值（默认 undefined）。</li>
+<li>get：该属性的 getter 函数（默认 undefined）。</li>
+<li>set：该属性的 set 函数（默认 undefined）。</li>
+</ul>
+</li>
+</ul>
+<p><strong>返回值：</strong>
+返回被传递给函数的对象。</p>
+<h3 id="环境搭建">环境搭建</h3>
+<p><strong>安装依赖：</strong></p>
+<pre><code class="hljs language-shell">npm install -D webpack webpack-cli webpack-dev-server html-webpack-plugin
+</code></pre>
+<p><strong>配置 webpack.config.js</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> { resolve } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;path&quot;</span>);
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">HTMLWebpackPlugin</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;html-webpack-plugin&quot;</span>);
+
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = {
+    <span class="hljs-attr">entry</span>: <span class="hljs-string">&quot;./src/js/index.js&quot;</span>,
+    <span class="hljs-attr">output</span>: {
+        <span class="hljs-attr">filename</span>: <span class="hljs-string">&quot;js/index.js&quot;</span>,
+        <span class="hljs-attr">path</span>: <span class="hljs-title function_">resolve</span>(__dirname, <span class="hljs-string">&quot;dist&quot;</span>),
+    },
+    <span class="hljs-attr">plugins</span>: [
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">HTMLWebpackPlugin</span>({
+            <span class="hljs-attr">template</span>: <span class="hljs-string">&quot;./src/index.html&quot;</span>,
+        }),
+    ],
+    <span class="hljs-attr">devServer</span>: {
+        <span class="hljs-attr">contentBase</span>: <span class="hljs-title function_">resolve</span>(__dirname, <span class="hljs-string">&quot;dist&quot;</span>),
+        <span class="hljs-attr">port</span>: <span class="hljs-number">8001</span>,
+        <span class="hljs-attr">open</span>: <span class="hljs-literal">true</span>,
+    },
+};
+</code></pre>
+<p><strong>案例:</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">let</span> obj = {};
+<span class="hljs-keyword">let</span> temp = <span class="hljs-number">7</span>;
+<span class="hljs-title class_">Object</span>.<span class="hljs-title function_">defineProperty</span>(obj, <span class="hljs-string">&quot;a&quot;</span>, {
+    <span class="hljs-attr">enumerable</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">configurable</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-title function_">get</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`你试图访问<span class="hljs-subst">${data}</span>对象，<span class="hljs-subst">${key}</span>属性`</span>);
+        <span class="hljs-keyword">return</span> temp;
+    },
+    <span class="hljs-title function_">set</span>(<span class="hljs-params">value</span>) {
+        temp = value;
+    },
+});
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(obj.<span class="hljs-property">a</span>); <span class="hljs-comment">// 7</span>
+</code></pre>
+<h2 id="递归侦测对象全部属性">递归侦测对象全部属性</h2>
+<blockquote>
+<p>将一个正常的 object 转换为每个层级的属性都是响应式（可以被侦测的）的 object.ai</p>
+</blockquote>
+<p><strong>defineREactive</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-comment">/**
+ *
+ * 为Object.defineProperty()函数提供闭包环境，方便函数内部get和set方法赋值。
+ *
+ * <span class="hljs-doctag">@param</span> {<span class="hljs-type">object</span>} data 需要设置的对象
+ * <span class="hljs-doctag">@param</span> {<span class="hljs-type">string </span>} key 需要设置对象的属性
+ * <span class="hljs-doctag">@param</span> {<span class="hljs-type">any</span>} val 需要设置对象属性的值
+ */</span>
+
+<span class="hljs-keyword">import</span> observe <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./observe.js&quot;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">defineReactive</span>(<span class="hljs-params">data, key, val</span>) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">arguments</span>.<span class="hljs-property">length</span> == <span class="hljs-number">2</span>) {
+        val = data[key];
+    }
+
+    <span class="hljs-comment">// 子元素进行observe</span>
+    <span class="hljs-keyword">let</span> childOb = <span class="hljs-title function_">observe</span>(val);
+
+    <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">defineProperty</span>(data, key, {
+        <span class="hljs-attr">enumerable</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">configurable</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-title function_">get</span>(<span class="hljs-params"></span>) {
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`你试图访问<span class="hljs-subst">${data}</span>对象，<span class="hljs-subst">${key}</span>属性`</span>);
+            <span class="hljs-keyword">return</span> val;
+        },
+        <span class="hljs-title function_">set</span>(<span class="hljs-params">value</span>) {
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`你试图更改<span class="hljs-subst">${data}</span>对象，<span class="hljs-subst">${key}</span>属性`</span>);
+            <span class="hljs-keyword">if</span> (val === value) {
+                <span class="hljs-keyword">return</span>;
+            }
+            val = value;
+            childOb = <span class="hljs-title function_">observe</span>(value);
+        },
+    });
+}
+</code></pre>
+<p><strong>observe</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-comment">/**
+ * 用于侦测对象身上有没有__ob__属性
+ */</span>
+
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">Observer</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./Observer.js&quot;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">observe</span>(<span class="hljs-params">value</span>) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> value != <span class="hljs-string">&quot;object&quot;</span>) <span class="hljs-keyword">return</span>;
+
+    <span class="hljs-keyword">let</span> ob;
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> value.<span class="hljs-property">__ob__</span> !== <span class="hljs-string">&quot;undefined&quot;</span>) {
+        ob = value.<span class="hljs-property">__ob__</span>;
+    } <span class="hljs-keyword">else</span> {
+        ob = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Observer</span>(value);
+    }
+    <span class="hljs-keyword">return</span> ob;
+}
+</code></pre>
+<p><strong>Observer</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-comment">/**
+ * 用于递归侦测对象的所有属性。
+ * 将一个正常的object转换为每个层级的属性都是响应式（可以被侦测的）的object
+ */</span>
+
+<span class="hljs-keyword">import</span> { def } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./utils.js&quot;</span>;
+<span class="hljs-keyword">import</span> defineReactive <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./defineReactive.js&quot;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Observer</span> {
+    <span class="hljs-title function_">constructor</span>(<span class="hljs-params">value</span>) {
+        <span class="hljs-comment">// 给实例添加了__ob__属性，值是这次new的实例。</span>
+        <span class="hljs-title function_">def</span>(value, <span class="hljs-string">&quot;__ob__&quot;</span>, <span class="hljs-variable language_">this</span>, <span class="hljs-literal">false</span>);
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;我是Observer构造器&quot;</span>, value);
+        <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">walk</span>(value);
+    }
+
+    <span class="hljs-comment">// 遍历</span>
+    <span class="hljs-title function_">walk</span>(<span class="hljs-params">value</span>) {
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> k <span class="hljs-keyword">in</span> value) {
+            <span class="hljs-title function_">defineReactive</span>(value, k);
+        }
+    }
+}
+</code></pre>
+<p><strong>utils</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> def = <span class="hljs-keyword">function</span>(<span class="hljs-params">obj, key, value, enumerable</span>) {
+    <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">defineProperty</span>(obj, key, {
+        value,
+        enumerable,
+        <span class="hljs-attr">writable</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">configurable</span>: <span class="hljs-literal">true</span>,
+    });
+};
+</code></pre>
+<h2 id="数组的响应式处理">数组的响应式处理</h2>
+<p> <strong>数组响应式实现原理</strong></p>
+<ul>
+<li>以 Array.prototype 为原型，创建了 arrayMethods 对象，该对象改写了数组 7 个方法：<code>push</code>、<code>pop</code>、<code>shift</code>、<code>unshift</code>、<code>splice</code>、<code>sort</code>、<code>reverse</code>。</li>
+<li>通过 Object.setPrototypeOf()方法将数组的原型指向 arrayMethods。</li>
+<li>数组调用 7 个方法的时候就会触发 arrayMethods 中改写的 7 个方法实现数组响应式。</li>
+</ul>
+<p><strong>array.js</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> { def } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./utils.js&quot;</span>;
+
+<span class="hljs-comment">// 得到Array.prototype</span>
+<span class="hljs-keyword">const</span> arrayPrototype = <span class="hljs-title class_">Array</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>;
+
+<span class="hljs-comment">// 以 Array.prototype 为原型创建 arrayMethods 对象</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> arrayMethods = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">create</span>(arrayPrototype);
+
+<span class="hljs-comment">// 要改写的 7 个数组方法</span>
+<span class="hljs-keyword">const</span> methodsNeedChange = [
+    <span class="hljs-string">&quot;push&quot;</span>,
+    <span class="hljs-string">&quot;pop&quot;</span>,
+    <span class="hljs-string">&quot;shift&quot;</span>,
+    <span class="hljs-string">&quot;unshift&quot;</span>,
+    <span class="hljs-string">&quot;splice&quot;</span>,
+    <span class="hljs-string">&quot;sort&quot;</span>,
+    <span class="hljs-string">&quot;reverse&quot;</span>,
+];
+
+methodsNeedChange.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">methodName</span>) =&gt;</span> {
+    <span class="hljs-comment">// 备份原来的方法</span>
+    <span class="hljs-keyword">const</span> original = arrayPrototype[methodName];
+
+    <span class="hljs-comment">// 定义新的方法</span>
+    <span class="hljs-title function_">def</span>(
+        arrayMethods,
+        methodName,
+        <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+            <span class="hljs-comment">// 把类数组对象变为数组</span>
+            <span class="hljs-keyword">const</span> args = [...<span class="hljs-variable language_">arguments</span>];
+            <span class="hljs-comment">// 恢复原来功能</span>
+            <span class="hljs-keyword">const</span> result = original.<span class="hljs-title function_">apply</span>(<span class="hljs-variable language_">this</span>, args);
+
+            <span class="hljs-comment">// 把这个数组身上的__ob__去取出来</span>
+            <span class="hljs-keyword">const</span> ob = <span class="hljs-variable language_">this</span>.<span class="hljs-property">__ob__</span>;
+
+            <span class="hljs-comment">// push\unshift\splice能插入新项，要把插入的新项也变成observe的</span>
+            <span class="hljs-keyword">let</span> inserted = [];
+
+            <span class="hljs-keyword">switch</span> (methodName) {
+                <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;push&quot;</span>:
+                <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;unshift&quot;</span>:
+                    inserted = args;
+                    <span class="hljs-keyword">break</span>;
+                <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;splice&quot;</span>:
+                    inserted = args.<span class="hljs-title function_">slice</span>(<span class="hljs-number">2</span>);
+                    <span class="hljs-keyword">break</span>;
+            }
+
+            <span class="hljs-comment">// 判断有没有需要插入的新项，让新项也变为响应的</span>
+            <span class="hljs-keyword">if</span> (inserted) {
+                ob.<span class="hljs-title function_">observeArray</span>(inserted);
+            }
+
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">21324</span>);
+            <span class="hljs-keyword">return</span> result;
+        },
+        <span class="hljs-literal">false</span>
+    );
+});
+</code></pre>
+<p><strong>Observer.js</strong></p>
+<pre><code class="hljs language-js">...略...
+<span class="hljs-comment">// 检测时数组还是对象</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-title class_">Array</span>.<span class="hljs-title function_">isArray</span>(value)) {
+    <span class="hljs-comment">// 如果是数组，将这个数组的原型指向 arrayMethods</span>
+    <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">setPrototypeOf</span>(value, arrayMethods);
+    <span class="hljs-comment">// 让这个数组变得 observe</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">observeArray</span>(value);
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">walk</span>(value);
+}
+...略...
+</code></pre>
+<h2 id="依赖收集">依赖收集</h2>
+<h3 id="什么是依赖">什么是依赖</h3>
+<ul>
+<li>Vue1.x，细粒度依赖，用到数据的 DOM 都是依赖；</li>
+<li>Vue2.x，中等粒度依赖，用到数据的组件是依赖；</li>
+<li>在 getter 中收集依赖，在 setter 中触发依赖。</li>
+</ul>
+<h3 id="dep-类和-watcher-类">Dep 类和 Watcher 类</h3>
+<ul>
+<li><p>把依赖收集的代码封装成一个 Dep 类，它专门用来管理依赖，==每个 Observer 的实例，成员中都有一个 Dep 的实例== ；</p>
+</li>
+<li><p>Watcher 是一个中介，数据发生变化时通过 Watcher 中转，通知组件；</p>
+</li>
+<li><p>依赖就是 Watcher。只有 Watcher 触发的 getter 才会收集依赖，哪个 Watcher 触发了 getter，就把哪个 Watcher 收集到 Dep 中。</p>
+</li>
+<li><p>Dep 使用发布订阅模式，当数据发生变化时，会循环依赖列表，把所有的 Watcher 都通知一遍。</p>
+</li>
+<li><p>Watcher 把自己设置到全局的一个指定位置，然后读取数据，因为读取了数据，所以会触发这个数据的 getter。在 getter 中就能得到当前正在读取数据的 Watcher，并把这个 Watcher 收集到 Dep 中。</p>
+</li>
+</ul>
+<p><strong>Dep</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">let</span> uid = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Dep</span> {
+    <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">id</span> = uid++;
+        <span class="hljs-comment">// 用数组存储自己的订阅者</span>
+        <span class="hljs-comment">// 这个数组里面放的是watcher的实例</span>
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">subs</span> = [];
+    }
+    <span class="hljs-comment">// 添加订阅</span>
+    <span class="hljs-title function_">addSub</span>(<span class="hljs-params">sub</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">subs</span>.<span class="hljs-title function_">push</span>(sub);
+    }
+
+    <span class="hljs-comment">// 添加依赖</span>
+    <span class="hljs-title function_">depend</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-comment">// Dep.target就是一个我们自己指定的全局位置</span>
+        <span class="hljs-keyword">if</span> (<span class="hljs-title class_">Dep</span>.<span class="hljs-property">target</span>) {
+            <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">addSub</span>(<span class="hljs-title class_">Dep</span>.<span class="hljs-property">target</span>);
+        }
+    }
+
+    <span class="hljs-comment">// 通知跟新</span>
+    <span class="hljs-title function_">notify</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-comment">// 浅克隆一份</span>
+        <span class="hljs-keyword">const</span> subs = <span class="hljs-variable language_">this</span>.<span class="hljs-property">subs</span>.<span class="hljs-title function_">slice</span>();
+        <span class="hljs-comment">// 遍历</span>
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>, l = subs.<span class="hljs-property">length</span>; i &lt; l; i++) {
+            subs[i].<span class="hljs-title function_">update</span>();
+        }
+    }
+}
+</code></pre>
+<p><strong>Watcher</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> <span class="hljs-title class_">Dep</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./Dep.js&quot;</span>;
+
+<span class="hljs-keyword">let</span> uid = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Watcher</span> {
+    <span class="hljs-title function_">constructor</span>(<span class="hljs-params">target, expression, callback</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">id</span> = uid++;
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">target</span> = target;
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">getter</span> = <span class="hljs-title function_">parSePath</span>(expression);
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">callback</span> = callback;
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">value</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">get</span>();
+    }
+    <span class="hljs-title function_">update</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">run</span>();
+    }
+
+    <span class="hljs-title function_">get</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-comment">// 进入依赖收集阶段. 让全局Dep.target设置为Watcher本身,那么就是进入依赖收集阶段</span>
+        <span class="hljs-title class_">Dep</span>.<span class="hljs-property">target</span> = <span class="hljs-variable language_">this</span>;
+        <span class="hljs-keyword">const</span> obj = <span class="hljs-variable language_">this</span>.<span class="hljs-property">target</span>;
+        <span class="hljs-keyword">let</span> value;
+        <span class="hljs-keyword">try</span> {
+            value = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">getter</span>(obj);
+        } <span class="hljs-keyword">finally</span> {
+            <span class="hljs-title class_">Dep</span>.<span class="hljs-property">target</span> = <span class="hljs-literal">null</span>;
+        }
+        <span class="hljs-keyword">return</span> value;
+    }
+    <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">getAndInvoke</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">callback</span>);
+    }
+    <span class="hljs-title function_">getAndInvoke</span>(<span class="hljs-params">cb</span>) {
+        <span class="hljs-keyword">const</span> value = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">get</span>();
+        <span class="hljs-keyword">if</span> (value !== <span class="hljs-variable language_">this</span>.<span class="hljs-property">value</span> || <span class="hljs-keyword">typeof</span> value === <span class="hljs-string">&quot;object&quot;</span>) {
+            <span class="hljs-keyword">const</span> oldValue = <span class="hljs-variable language_">this</span>.<span class="hljs-property">value</span>;
+            <span class="hljs-variable language_">this</span>.<span class="hljs-property">value</span> = value;
+            cb.<span class="hljs-title function_">call</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">target</span>, value, oldValue);
+        }
+    }
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">parSePath</span>(<span class="hljs-params">str</span>) {
+    <span class="hljs-keyword">var</span> segments = str.<span class="hljs-title function_">split</span>(<span class="hljs-string">&quot;.&quot;</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-function">(<span class="hljs-params">obj</span>) =&gt;</span> {
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; segments.<span class="hljs-property">length</span>; i++) {
+            <span class="hljs-keyword">if</span> (!obj) <span class="hljs-keyword">return</span>;
+            obj = obj[segments[i]];
+        }
+        <span class="hljs-keyword">return</span> obj;
+    };
+}
+</code></pre>
+</div>
+        
+      </div>
+    </div>
+  </body>
+</html>
