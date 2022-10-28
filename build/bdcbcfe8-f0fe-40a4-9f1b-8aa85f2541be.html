@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>Best Shi</title>
+    <title>Linux 网络配置</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -88,7 +88,7 @@
                 
                   <a
                     id="bdcbcfe8-f0fe-40a4-9f1b-8aa85f2541be"
-                    class="menu-item"
+                    class="menu-active"
                     href="bdcbcfe8-f0fe-40a4-9f1b-8aa85f2541be.html "
                   >
                     Linux 网络配置
@@ -520,7 +520,45 @@
       </div>
       <div class="content">
         
-        <h2>aaaa</h2>
+        <div><h1 id="linux-网络配置">Linux 网络配置</h1>
+<ul>
+<li>修改网卡配置文件<pre><code class="hljs language-bash">vi /etc/sysconfig/network-scripts/ifcfg-ens33
+</code></pre>
+</li>
+<li>重启网络服务<pre><code class="hljs language-bash">systemctl restart network
+</code></pre>
+</li>
+</ul>
+<p>配置内容如下：</p>
+<p><img src="https://images.bestshi.com/Nginx%E5%AE%89%E8%A3%85-2022-09-04-01-14-56-20220904011456.png!watermark" alt="Nginx安装-2022-09-04-01-14-56-20220904011456"></p>
+<h2 id="公网-dns">公网 DNS</h2>
+<ul>
+<li><p>阿里</p>
+<pre><code class="hljs language-txt">223.5.5.5
+223.6.6.6
+</code></pre>
+</li>
+<li><p>腾讯</p>
+<pre><code class="hljs language-txt">119.29.29.29
+182.254.118.118
+</code></pre>
+</li>
+<li><p>百度</p>
+<pre><code class="hljs language-txt">180.76.76.76
+</code></pre>
+</li>
+<li><p>114</p>
+<pre><code class="hljs language-txt">114.114.114.114
+114.114.115.115
+</code></pre>
+</li>
+<li><p>谷歌</p>
+<pre><code class="hljs language-txt">8.8.8.8
+8.8.4.4
+</code></pre>
+</li>
+</ul>
+</div>
         
       </div>
     </div>

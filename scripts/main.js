@@ -54,6 +54,7 @@ for (let i = 0; i < fileList.length; i++) {
     title: fileInfo.info.name,
     content: html,
     nav: fileTree.children,
+    activeId: fileInfo.id,
   });
 
   // 写入文件
@@ -65,6 +66,7 @@ const ejsFile = ejs.render(template, {
   title: 'Best Shi',
   content: '',
   nav: fileTree.children,
+  activeId: '',
 });
 await writeFileSync(resolve(buildPath, `index.html`), ejsFile);
 

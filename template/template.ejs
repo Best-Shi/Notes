@@ -16,10 +16,24 @@
           <p class="menu"><%= item.info.name %></p>
           <ul>
             <li>
-              <% item.children.forEach(val => { %>
-              <a class="menu-item" href="<%= val.id %>.html">
-                <%= val.info.name %>
-              </a>
+              <% item.children.forEach(val => { %> 
+                <% if(val.id == activeId) {  %>
+                  <a
+                    id="<%= val.id %>"
+                    class="menu-active"
+                    href="<%= val.id %>.html %>"
+                  >
+                    <%= val.info.name %>
+                  </a>
+                <% } else { %>
+                  <a
+                    id="<%= val.id %>"
+                    class="menu-item"
+                    href="<%= val.id %>.html %>"
+                  >
+                    <%= val.info.name %>
+                  </a>
+                <% } %> 
               <% }) %>
             </li>
           </ul>

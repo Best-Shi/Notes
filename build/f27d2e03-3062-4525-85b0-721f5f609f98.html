@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>TypeScript 基本项目搭建</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        
+        <div>
+          <p class="menu">Git</p>
+          <ul>
+            <li>
+               
+                
+                  <a
+                    id="d1f58f77-6d1a-44c7-907c-bcee9c7fc4df"
+                    class="menu-item"
+                    href="d1f58f77-6d1a-44c7-907c-bcee9c7fc4df.html "
+                  >
+                    Git 学习
+                  </a>
+                 
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">JavaScript</p>
+          <ul>
+            <li>
+               
+                
+                  <a
+                    id="fc52bb5e-6146-40c1-a91c-dab67d471ca2"
+                    class="menu-item"
+                    href="fc52bb5e-6146-40c1-a91c-dab67d471ca2.html "
+                  >
+                    JavaScript异步处理
+                  </a>
+                 
+               
+                
+                  <a
+                    id="20a7e670-7aca-40b4-8f0e-a74a70779533"
+                    class="menu-item"
+                    href="20a7e670-7aca-40b4-8f0e-a74a70779533.html "
+                  >
+                    JavaScript数组
+                  </a>
+                 
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">linux</p>
+          <ul>
+            <li>
+               
+                
+                  <a
+                    id="fb3d9664-761d-4a6b-bc47-e83cae5baa99"
+                    class="menu-item"
+                    href="fb3d9664-761d-4a6b-bc47-e83cae5baa99.html "
+                  >
+                    ArchLinux安装美化之系统安装
+                  </a>
+                 
+               
+                
+                  <a
+                    id="6063788c-c04a-4c2a-9997-ac5134382c85"
+                    class="menu-item"
+                    href="6063788c-c04a-4c2a-9997-ac5134382c85.html "
+                  >
+                    Linux 压缩和解压缩命令
+                  </a>
+                 
+               
+                
+                  <a
+                    id="bdcbcfe8-f0fe-40a4-9f1b-8aa85f2541be"
+                    class="menu-item"
+                    href="bdcbcfe8-f0fe-40a4-9f1b-8aa85f2541be.html "
+                  >
+                    Linux 网络配置
+                  </a>
+                 
+               
+                
+                  <a
+                    id="94aa2e7b-398d-4165-8362-1c84aa51d9ab"
+                    class="menu-item"
+                    href="94aa2e7b-398d-4165-8362-1c84aa51d9ab.html "
+                  >
+                    nvm 安装与配置
+                  </a>
+                 
+               
+                
+                  <a
+                    id="23f73944-0b45-4fe0-99ce-430883af37df"
+                    class="menu-item"
+                    href="23f73944-0b45-4fe0-99ce-430883af37df.html "
+                  >
+                    oh-my-zsh 安装与配置
+                  </a>
+                 
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">MongDB</p>
+          <ul>
+            <li>
+               
+                
+                  <a
+                    id="9ed63665-6cbe-4330-a4f6-036ff82b0cdb"
+                    class="menu-item"
+                    href="9ed63665-6cbe-4330-a4f6-036ff82b0cdb.html "
+                  >
+                    MongoDB基本使用
+                  </a>
+                 
+               
+                
+                  <a
+                    id="cbc3081f-9d86-475d-a94e-0b0b5432ddf4"
+                    class="menu-item"
+                    href="cbc3081f-9d86-475d-a94e-0b0b5432ddf4.html "
+                  >
+                    MongoDB权限配置
+                  </a>
+                 
+               
+                
+                  <a
+                    id="060e7648-30df-43c6-a355-050c475c738d"
+                    class="menu-item"
+                    href="060e7648-30df-43c6-a355-050c475c738d.html "
+                  >
+                    MongoDB进阶
+                  </a>
+                 
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">Nginx</p>
+          <ul>
+            <li>
+               
+                
+                  <a
+                    id="43c84fac-a519-42f5-b2f1-764149a78e18"
+                    class="menu-item"
+                    href="43c84fac-a519-42f5-b2f1-764149a78e18.html "
+                  >
+                    Nginx安装
+                  </a>
+                 
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">npm</p>
+          <ul>
+            <li>
+               
+                
+                  <a
+                    id="bbf7f544-d625-47b2-b2fe-465ef2c48651"
+                    class="menu-item"
+                    href="bbf7f544-d625-47b2-b2fe-465ef2c48651.html "
+                  >
+                    npm-workspace
+                  </a>
+                 
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">PowerShell</p>
+          <ul>
+            <li>
+               
+                
+                  <a
+                    id="3a9e9fa4-0493-43fd-817e-ee7e6ee4da5b"
+                    class="menu-item"
+                    href="3a9e9fa4-0493-43fd-817e-ee7e6ee4da5b.html "
+                  >
+                    PoserShell 学习
+                  </a>
+                 
+               
+                
+                  <a
+                    id="54fb5d09-9a16-49dd-b120-6df796752e0b"
+                    class="menu-item"
+                    href="54fb5d09-9a16-49dd-b120-6df796752e0b.html "
+                  >
+                    powershell 命令
+                  </a>
+                 
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">rust</p>
+          <ul>
+            <li>
+               
+                
+                  <a
+                    id="e91e258d-a804-454a-9fd9-a488cddd4dca"
+                    class="menu-item"
+                    href="e91e258d-a804-454a-9fd9-a488cddd4dca.html "
+                  >
+                    Rust 基础
+                  </a>
+                 
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">TypeScript</p>
+          <ul>
+            <li>
+               
+                
+                  <a
+                    id="f27d2e03-3062-4525-85b0-721f5f609f98"
+                    class="menu-active"
+                    href="f27d2e03-3062-4525-85b0-721f5f609f98.html "
+                  >
+                    TypeScript 基本项目搭建
+                  </a>
+                 
+               
+                
+                  <a
+                    id="2fb81437-0978-412f-92f0-962baa1b5a0c"
+                    class="menu-item"
+                    href="2fb81437-0978-412f-92f0-962baa1b5a0c.html "
+                  >
+                    TypeScript类型与配置笔记
+                  </a>
+                 
+               
+                
+                  <a
+                    id="cadf8e88-eda4-4430-ac10-40f6aafaec89"
+                    class="menu-item"
+                    href="cadf8e88-eda4-4430-ac10-40f6aafaec89.html "
+                  >
+                    TypeScript面向对象笔记
+                  </a>
+                 
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">vscode</p>
+          <ul>
+            <li>
+               
+                
+                  <a
+                    id="2ecbcf60-b47d-4b75-8a91-4baa529a33a2"
+                    class="menu-item"
+                    href="2ecbcf60-b47d-4b75-8a91-4baa529a33a2.html "
+                  >
+                    vscode配置
+                  </a>
+                 
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">vue3</p>
+          <ul>
+            <li>
+               
+                
+                  <a
+                    id="a29b3647-4f7c-4e29-857f-ca7ee39f93b7"
+                    class="menu-item"
+                    href="a29b3647-4f7c-4e29-857f-ca7ee39f93b7.html "
+                  >
+                    Composition API(其它部分)
+                  </a>
+                 
+               
+                
+                  <a
+                    id="afc21443-968c-420b-abd4-a6b0203f64f2"
+                    class="menu-item"
+                    href="afc21443-968c-420b-abd4-a6b0203f64f2.html "
+                  >
+                    Composition API(常用部分)
+                  </a>
+                 
+               
+                
+                  <a
+                    id="4318da5e-9af8-48f5-9655-aabce548e1b4"
+                    class="menu-item"
+                    href="4318da5e-9af8-48f5-9655-aabce548e1b4.html "
+                  >
+                    Vue3 新组件
+                  </a>
+                 
+               
+                
+                  <a
+                    id="4dd7bc8e-d0b6-4f79-83d3-5486a9706cef"
+                    class="menu-item"
+                    href="4dd7bc8e-d0b6-4f79-83d3-5486a9706cef.html "
+                  >
+                    vue3快速上手
+                  </a>
+                 
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">webpack</p>
+          <ul>
+            <li>
+               
+                
+                  <a
+                    id="3ebe694b-f27a-4576-a0bb-25bea185bfff"
+                    class="menu-item"
+                    href="3ebe694b-f27a-4576-a0bb-25bea185bfff.html "
+                  >
+                    vue+ts+eslint前端项目搭建
+                  </a>
+                 
+               
+                
+                  <a
+                    id="2ae0445f-3eee-4794-8e45-5b483e9cfd30"
+                    class="menu-item"
+                    href="2ae0445f-3eee-4794-8e45-5b483e9cfd30.html "
+                  >
+                    webpack + vue 企业级项目搭建
+                  </a>
+                 
+               
+                
+                  <a
+                    id="78709f01-0e08-4928-aef5-1c66bd53c07e"
+                    class="menu-item"
+                    href="78709f01-0e08-4928-aef5-1c66bd53c07e.html "
+                  >
+                    webpack配置
+                  </a>
+                 
+               
+                
+                  <a
+                    id="c61b5070-0a88-4f1e-ad8b-8c264119e676"
+                    class="menu-item"
+                    href="c61b5070-0a88-4f1e-ad8b-8c264119e676.html "
+                  >
+                    前端常用
+                  </a>
+                 
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">Windows</p>
+          <ul>
+            <li>
+               
+                
+                  <a
+                    id="dd3de26c-5b7b-4b86-83c8-343606eeb752"
+                    class="menu-item"
+                    href="dd3de26c-5b7b-4b86-83c8-343606eeb752.html "
+                  >
+                    Windows Terminal设置代理
+                  </a>
+                 
+               
+                
+                  <a
+                    id="db098c46-f453-490d-8c2c-2cfa28425d0b"
+                    class="menu-item"
+                    href="db098c46-f453-490d-8c2c-2cfa28425d0b.html "
+                  >
+                    Windows安装优化
+                  </a>
+                 
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">其它</p>
+          <ul>
+            <li>
+               
+                
+                  <a
+                    id="d5e75cca-bef2-4393-83a3-b5deceb20b25"
+                    class="menu-item"
+                    href="d5e75cca-bef2-4393-83a3-b5deceb20b25.html "
+                  >
+                    mustache模板引擎
+                  </a>
+                 
+               
+                
+                  <a
+                    id="d76e86c2-3e43-4dbf-9087-84b85ce8b55e"
+                    class="menu-item"
+                    href="d76e86c2-3e43-4dbf-9087-84b85ce8b55e.html "
+                  >
+                    双向数据绑定
+                  </a>
+                 
+               
+                
+                  <a
+                    id="9ebd0d06-16ee-4583-b9b6-0b352e483eef"
+                    class="menu-item"
+                    href="9ebd0d06-16ee-4583-b9b6-0b352e483eef.html "
+                  >
+                    抽象语法树
+                  </a>
+                 
+               
+                
+                  <a
+                    id="c9a2a954-49e7-437e-a2f4-47c103169004"
+                    class="menu-item"
+                    href="c9a2a954-49e7-437e-a2f4-47c103169004.html "
+                  >
+                    虚拟DOM与diff算法
+                  </a>
+                 
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="menu">打包构建工具</p>
+          <ul>
+            <li>
+               
+                
+                  <a
+                    id="7a568c1d-0f65-47a2-8a82-abb772a5f8e3"
+                    class="menu-item"
+                    href="7a568c1d-0f65-47a2-8a82-abb772a5f8e3.html "
+                  >
+                    Grunt
+                  </a>
+                 
+               
+                
+                  <a
+                    id="dd518d74-b24a-4cb8-8c8b-dd5f90440824"
+                    class="menu-item"
+                    href="dd518d74-b24a-4cb8-8c8b-dd5f90440824.html "
+                  >
+                    Gulp
+                  </a>
+                 
+               
+                
+                  <a
+                    id="fda4ce1b-f4dd-404d-9f94-99e0f5e6fece"
+                    class="menu-item"
+                    href="fda4ce1b-f4dd-404d-9f94-99e0f5e6fece.html "
+                  >
+                    Rollup
+                  </a>
+                 
+              
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="content">
+        
+        <div><h1 id="typescript-基本项目搭建">TypeScript 基本项目搭建</h1>
+<p>基于<code>webpack</code>搭建简单得<code>TypeScript</code>开发环境。</p>
+<h2 id="1、webpack-配置">1、webpack 配置</h2>
+<h3 id="11、步骤">1.1、步骤</h3>
+<ol>
+<li><p>初始化项目</p>
+<ul>
+<li>进入项目根目录，执行命令<code>npm init -y</code>。</li>
+</ul>
+</li>
+<li><p>下载构建工具</p>
+<pre><code class="hljs language-shell">npm i -D webpack webpack-cli webpack-dev-server typescript ts-loader html-webpack-plugin clean-webpack-plugin
+</code></pre>
+<ul>
+<li><code>webpack</code>打包构建工具</li>
+<li><code>webpack-cli</code>webpack 命令行工具</li>
+<li><code>webpack-dev-server</code>webpack 开发服务器</li>
+<li><code>typescript</code>ts 编译器</li>
+<li><code>ts-loader</code>ts 加载器，用于在 webpack 中编译 ts 文件</li>
+<li><code>html-webpack-plugin</code>webpack 中 html 插件，用来自动创建 html 文件</li>
+<li><code>clean-wepback-plugin</code>webpack 中的清除插件，每次构建都会先清除目录</li>
+</ul>
+</li>
+<li><p>根目录下创建 webpack 配置文件<code>webpack.config.js</code></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;path&quot;</span>);
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">HTMLWebpackPlugin</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;html-webpack-plugin&quot;</span>);
+<span class="hljs-keyword">const</span> { <span class="hljs-title class_">CleanWebpackPlugin</span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;clean-webpack-plugin&quot;</span>);
+
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = {
+    <span class="hljs-comment">// 指定入口文件</span>
+    <span class="hljs-attr">entry</span>: <span class="hljs-string">&quot;./src/index.ts&quot;</span>,
+
+    <span class="hljs-comment">// 指定打包文件所在目录</span>
+    <span class="hljs-attr">output</span>: {
+        <span class="hljs-comment">// 指定打包文件所在目录</span>
+        <span class="hljs-attr">path</span>: path.<span class="hljs-title function_">resolve</span>(__dirname, <span class="hljs-string">&quot;./dist&quot;</span>),
+        <span class="hljs-comment">// 指定打包后文件的文件</span>
+        <span class="hljs-attr">filename</span>: <span class="hljs-string">&quot;index.js&quot;</span>,
+
+        <span class="hljs-comment">// 配置输出环境</span>
+        <span class="hljs-attr">environment</span>: {
+            <span class="hljs-comment">// 不使用箭头函数</span>
+            <span class="hljs-attr">arrowFunction</span>: <span class="hljs-literal">false</span>,
+        },
+    },
+
+    <span class="hljs-comment">// 指定webpack打包时要使用的模块</span>
+    <span class="hljs-attr">module</span>: {
+        <span class="hljs-comment">// 指定规则</span>
+        <span class="hljs-attr">rules</span>: [
+            {
+                <span class="hljs-comment">// test指定规则生效的文件</span>
+                <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.ts$/</span>,
+
+                <span class="hljs-comment">// 需要使用的loader,从后往前执行</span>
+                <span class="hljs-attr">use</span>: [
+                    <span class="hljs-comment">// 配置babel</span>
+                    {
+                        <span class="hljs-attr">loader</span>: <span class="hljs-string">&quot;babel-loader&quot;</span>,
+                        <span class="hljs-attr">options</span>: {
+                            <span class="hljs-attr">presets</span>: [
+                                [
+                                    <span class="hljs-comment">// 指定环境插件</span>
+                                    <span class="hljs-string">&quot;@babel/preset-env&quot;</span>,
+                                    <span class="hljs-comment">// 配置信息</span>
+                                    {
+                                        <span class="hljs-comment">// 要兼容的目标浏览器</span>
+                                        <span class="hljs-attr">targets</span>: {
+                                            <span class="hljs-attr">chrome</span>: <span class="hljs-string">&quot;74&quot;</span>,
+                                            <span class="hljs-attr">ie</span>: <span class="hljs-string">&quot;10&quot;</span>,
+                                        },
+                                        <span class="hljs-comment">// 指定corejs的版本</span>
+                                        <span class="hljs-attr">corejs</span>: <span class="hljs-string">&quot;3&quot;</span>,
+                                        <span class="hljs-comment">// 使用corejs的方式 &quot;usage&quot;表示按需加载</span>
+                                        <span class="hljs-attr">useBuiltIns</span>: <span class="hljs-string">&quot;usage&quot;</span>,
+                                    },
+                                ],
+                            ],
+                        },
+                    },
+                    <span class="hljs-string">&quot;ts-loader&quot;</span>,
+                ],
+
+                <span class="hljs-comment">// 要排除的文件</span>
+                <span class="hljs-attr">exclude</span>: <span class="hljs-regexp">/node_modules/</span>,
+            },
+
+            <span class="hljs-comment">// 设置less文件处理</span>
+            {
+                <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.less$/</span>,
+                <span class="hljs-attr">use</span>: [
+                    <span class="hljs-string">&quot;style-loader&quot;</span>,
+                    <span class="hljs-string">&quot;css-loader&quot;</span>,
+                    <span class="hljs-comment">// 引入postcss</span>
+                    {
+                        <span class="hljs-attr">loader</span>: <span class="hljs-string">&quot;postcss-loader&quot;</span>,
+                        <span class="hljs-attr">options</span>: {
+                            <span class="hljs-attr">postcssOptions</span>: {
+                                <span class="hljs-attr">plugins</span>: [
+                                    [
+                                        <span class="hljs-string">&quot;postcss-preset-env&quot;</span>,
+                                        {
+                                            <span class="hljs-comment">// 兼容最先两个版本浏览器</span>
+                                            <span class="hljs-attr">browsers</span>: <span class="hljs-string">&quot;last 2 versions&quot;</span>,
+                                        },
+                                    ],
+                                ],
+                            },
+                        },
+                    },
+                    <span class="hljs-string">&quot;less-loader&quot;</span>,
+                ],
+            },
+        ],
+    },
+
+    <span class="hljs-comment">// 配置webpack插件</span>
+    <span class="hljs-attr">plugins</span>: [
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">HTMLWebpackPlugin</span>({
+            <span class="hljs-comment">// title: &quot;TypeScript项目配置&quot;,</span>
+            <span class="hljs-attr">template</span>: <span class="hljs-string">&quot;./src/index.html&quot;</span>,
+        }),
+        <span class="hljs-comment">// 编译前先删除之前编译文件</span>
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">CleanWebpackPlugin</span>(),
+    ],
+
+    <span class="hljs-comment">// 设置引用模块</span>
+    <span class="hljs-attr">resolve</span>: {
+        <span class="hljs-attr">extensions</span>: [<span class="hljs-string">&quot;.ts&quot;</span>, <span class="hljs-string">&quot;.js&quot;</span>],
+    },
+};
+</code></pre>
+</li>
+<li><p>在根目录下创建 ts 配置文件<code>tsconfig.josn</code></p>
+<pre><code class="hljs language-josn">{
+    &quot;compilerOptions&quot;: {
+        &quot;target&quot;: &quot;ES6&quot;,
+        &quot;module&quot;: &quot;ES6&quot;,
+        &quot;strict&quot;: true,
+        &quot;removeComments&quot;: true,
+        &quot;noEmitOnError&quot;: true
+    }
+}
+</code></pre>
+</li>
+<li><p>修改<code>package.json</code>配置文件</p>
+<pre><code class="hljs language-json">...略...
+<span class="hljs-attr">&quot;scripts&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+    <span class="hljs-attr">&quot;test&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">&quot;build&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;webpack&quot;</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">&quot;start&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;webpack serve  --open Chrome.exe&quot;</span>
+<span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+...略...
+</code></pre>
+</li>
+</ol>
+<h2 id="2、babel-处理-js-兼容">2、Babel 处理 js 兼容</h2>
+<blockquote>
+<p>需要结合 babel 来对代码进行转换以使其可以兼容到更多的浏览器。</p>
+</blockquote>
+<ol>
+<li><p>安装依赖</p>
+<pre><code class="hljs language-shell">npm i -D @babel/core @babel/preset-env babel-loader core-js
+</code></pre>
+<ul>
+<li><code>@babel/core</code>babel 的核心工具</li>
+<li><code>@babel/preset-env</code>babel 的预定义环境</li>
+<li><code>babel-loader</code>babel 在 webpack 中的加载器</li>
+<li><code>core-js</code>用来使老版本浏览器支持新版 ES 语法</li>
+</ul>
+</li>
+<li><p>修改<code>webpack.config.js</code>配置文件</p>
+<pre><code class="hljs language-js">...略...
+<span class="hljs-comment">// 指定webpack打包时要使用的模块</span>
+<span class="hljs-attr">module</span>: {
+    <span class="hljs-comment">// 指定规则</span>
+    <span class="hljs-attr">rules</span>: [
+        {
+            <span class="hljs-comment">// test指定规则生效的文件</span>
+            <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.ts$/</span>,
+
+            <span class="hljs-comment">// 需要使用的loader,从后往前执行</span>
+            <span class="hljs-attr">use</span>: [
+                <span class="hljs-comment">// 配置babel</span>
+                {
+                    <span class="hljs-attr">loader</span>: <span class="hljs-string">&quot;babel-loader&quot;</span>,
+                    <span class="hljs-attr">options</span>: {
+                        <span class="hljs-attr">presets</span>: [
+                            [
+                                <span class="hljs-comment">// 指定环境插件</span>
+                                <span class="hljs-string">&quot;@babel/preset-env&quot;</span>,
+                                <span class="hljs-comment">// 配置信息</span>
+                                {
+                                    <span class="hljs-comment">// 要兼容的目标浏览器</span>
+                                    <span class="hljs-attr">targets</span>: {
+                                        <span class="hljs-attr">chrome</span>: <span class="hljs-string">&quot;74&quot;</span>,
+                                        <span class="hljs-attr">ie</span>: <span class="hljs-string">&quot;10&quot;</span>,
+                                    },
+                                    <span class="hljs-comment">// 指定corejs的版本</span>
+                                    <span class="hljs-attr">corejs</span>: <span class="hljs-string">&quot;3&quot;</span>,
+                                    <span class="hljs-comment">// 使用corejs的方式 &quot;usage&quot;表示按需加载</span>
+                                    <span class="hljs-attr">useBuiltIns</span>: <span class="hljs-string">&quot;usage&quot;</span>,
+                                },
+                            ],
+                        ],
+                    },
+                },
+                <span class="hljs-string">&quot;ts-loader&quot;</span>,
+            ],
+        },
+    ],
+},
+...略...
+</code></pre>
+</li>
+</ol>
+<h2 id="3、css-样式处理">3、CSS 样式处理</h2>
+<p>这里的 css 样式使用 less 预处理器。</p>
+<ol>
+<li><p>安装依赖</p>
+<pre><code class="hljs language-shell">npm i -D less less-loader css-loader style-loader
+</code></pre>
+<ul>
+<li><code>less</code>less 编译器</li>
+<li><code>less-loader</code>less 加载器</li>
+<li><code>css-loader</code>css 加载器</li>
+<li><code>style-loader</code>样式加载器（把样式插入 DOM 中）</li>
+</ul>
+</li>
+<li><p>修改<code>webpack.config.js</code>配置文件</p>
+<pre><code class="hljs language-js">...略...
+<span class="hljs-comment">// 指定webpack打包时要使用的模块</span>
+<span class="hljs-attr">module</span>: {
+    <span class="hljs-comment">// 指定规则</span>
+    <span class="hljs-attr">rules</span>: [
+        <span class="hljs-comment">// 设置less文件处理</span>
+        {
+            <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.less$/</span>,
+            <span class="hljs-attr">use</span>: [
+                <span class="hljs-string">&quot;style-loader&quot;</span>,
+                <span class="hljs-string">&quot;css-loader&quot;</span>,
+                <span class="hljs-string">&quot;less-loader&quot;</span>,
+            ],
+        },
+    ],
+},
+...略...
+</code></pre>
+</li>
+<li><p>css 浏览器兼容配置</p>
+<p> 3.1、 安装依赖</p>
+<pre><code class="hljs language-shell">npm i -D postcss postcss-loader postcss-preset-env
+</code></pre>
+<p> 3.2、 修改<code>webpack.config.js</code>配置文件</p>
+<pre><code class="hljs language-js">...略...
+<span class="hljs-comment">// 指定webpack打包时要使用的模块</span>
+<span class="hljs-attr">module</span>: {
+    <span class="hljs-comment">// 指定规则</span>
+    <span class="hljs-attr">rules</span>: [
+        <span class="hljs-comment">// 设置less文件处理</span>
+        {
+            <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.less$/</span>,
+            <span class="hljs-attr">use</span>: [
+                <span class="hljs-string">&quot;style-loader&quot;</span>,
+                <span class="hljs-string">&quot;css-loader&quot;</span>,
+                <span class="hljs-comment">// 引入postcss</span>
+                {
+                    <span class="hljs-attr">loader</span>: <span class="hljs-string">&quot;postcss-loader&quot;</span>,
+                    <span class="hljs-attr">options</span>: {
+                        <span class="hljs-attr">postcssOptions</span>: {
+                            <span class="hljs-attr">plugins</span>: [
+                                [
+                                    <span class="hljs-string">&quot;postcss-preset-env&quot;</span>,
+                                    {
+                                        <span class="hljs-comment">// 兼容最先两个版本浏览器</span>
+                                        <span class="hljs-attr">browsers</span>: <span class="hljs-string">&quot;last 2 versions&quot;</span>,
+                                    },
+                                ],
+                            ],
+                        },
+                    },
+                },
+                <span class="hljs-string">&quot;less-loader&quot;</span>,
+            ],
+        },
+    ],
+},
+...略...
+</code></pre>
+</li>
+</ol>
+<h2 id="4、typescript-配置文件说明">4、TypeScript 配置文件说明</h2>
+<pre><code class="hljs language-json">
+<span class="hljs-comment">// {</span>
+<span class="hljs-comment">//     &quot;compilerOptions&quot;: {</span>
+<span class="hljs-comment">/* 访问https://aka.ms/tsconfig.json以了解有关此文件的更多信息 */</span>
+<span class="hljs-comment">/* 基本选项 */</span>
+<span class="hljs-comment">// &quot;incremental&quot;: true,                         /* 启用增量编译 */</span>
+<span class="hljs-comment">// &quot;target&quot;: &quot;es5&quot;,                             /* 指定ECMAScript目标版本：“ ES3”（默认），“ ES5”，“ ES2015”，“ ES2016”，“ ES2017”，“ ES2018”，“ ES2019”，“ ES2020”或“ ESNEXT”。 */</span>
+<span class="hljs-comment">// &quot;module&quot;: &quot;commonjs&quot;,                        /* 指定模块代码生成：“ none”，“ commonjs”，“ amd”，“ system”，“ umd”，“ es2015”，“ es2020”或“ ESNext”。 */</span>
+<span class="hljs-comment">// &quot;lib&quot;: [],                                   /* 指定要包含在编译中的库文件。 */</span>
+<span class="hljs-comment">// &quot;allowJs&quot;: true,                             /* 允许编译javascript文件。 */</span>
+<span class="hljs-comment">// &quot;checkJs&quot;: true,                             /* 报告.js文件中的错误。 */</span>
+<span class="hljs-comment">// &quot;jsx&quot;: &quot;preserve&quot;,                           /* 指定JSX代码生成：&#x27;preserve&#x27;，&#x27;react-native&#x27;或&#x27;react&#x27;。 */</span>
+<span class="hljs-comment">// &quot;declaration&quot;: true,                         /* 生成相应的&#x27;.d.ts&#x27;文件。 */</span>
+<span class="hljs-comment">// &quot;declarationMap&quot;: true,                      /* 为每个相应的&#x27;.d.ts&#x27;文件生成一个源映射。 */</span>
+<span class="hljs-comment">// &quot;sourceMap&quot;: true,                           /* 生成相应的&#x27;.map&#x27;文件。 */</span>
+<span class="hljs-comment">// &quot;outFile&quot;: &quot;./&quot;,                             /* 连接并输出到单个文件。 */</span>
+<span class="hljs-comment">// &quot;outDir&quot;: &quot;./&quot;,                              /* 将输出结构重定向到目录。 */</span>
+<span class="hljs-comment">// &quot;rootDir&quot;: &quot;./&quot;,                             /* 指定输入文件的根目录。用于通过--outDir控制输出目录结构。 */</span>
+<span class="hljs-comment">// &quot;composite&quot;: true,                           /* 启用项目编译*/</span>
+<span class="hljs-comment">// &quot;tsBuildInfoFile&quot;: &quot;./&quot;,                     /* 指定用于存储增量编译信息的文件*/</span>
+<span class="hljs-comment">// &quot;removeComments&quot;: true,                      /* 不发出注释以输出。 *</span>
+<span class="hljs-comment">// &quot;noEmit&quot;: true,                              /* 不发出输出。 */</span>
+<span class="hljs-comment">// &quot;importHelpers&quot;: true,                       /* Import从&#x27;tslib&#x27;发出辅助函数。 */</span>
+<span class="hljs-comment">// &quot;downlevelIteration&quot;: true,                  /* 在以&#x27;ES5&#x27;或&#x27;ES3&#x27;为目标时，以&#x27;for-of&#x27;，散布和解构形式提供对可迭代对象的全面支持。 */</span>
+<span class="hljs-comment">// &quot;isolatedModules&quot;: true,                     /* 将每个文件作为一个单独的模块进行编译（类似于&#x27;ts.transpileModule&#x27;）。 */</span>
+<span class="hljs-comment">/* 严格的类型检查选项 */</span>
+<span class="hljs-comment">// &quot;strict&quot;: true,                              /* 启用所有严格的类型检查选项。 */</span>
+<span class="hljs-comment">// &quot;noImplicitAny&quot;: true,                       /* 在隐含“any”类型的表达式和声明上引发错误。 */</span>
+<span class="hljs-comment">// &quot;strictNullChecks&quot;: true,                    /* 启用严格的null检查。 */</span>
+<span class="hljs-comment">// &quot;strictFunctionTypes&quot;: true,                 /* 启用对函数类型的严格检查。 */</span>
+<span class="hljs-comment">// &quot;strictBindCallApply&quot;: true,                 /* 在函数上启用严格的“ bind”，“ call”和“ apply”方法。 */</span>
+<span class="hljs-comment">// &quot;strictPropertyInitialization&quot;: true,        /* 启用对类中属性初始化的严格检查。 */</span>
+<span class="hljs-comment">// &quot;noImplicitThis&quot;: true,                      /* 在隐含&#x27;any&#x27;类型的&#x27;this&#x27;表达式上引发错误。 */</span>
+<span class="hljs-comment">// &quot;alwaysStrict&quot;: true,                        /* 以严格模式解析，并对每个源文件发出“ use strict”。 */</span>
+<span class="hljs-comment">/* 其他检查 */</span>
+<span class="hljs-comment">// &quot;noUnusedLocals&quot;: true,                      /* 报告未使用的本地错误。 */</span>
+<span class="hljs-comment">// &quot;noUnusedParameters&quot;: true,                  /* 报告未使用参数的错误。 */</span>
+<span class="hljs-comment">// &quot;noImplicitReturns&quot;: true,                   /* 当并非函数中的所有代码路径都返回值时，报告错误。 */</span>
+<span class="hljs-comment">// &quot;noFallthroughCasesInSwitch&quot;: true,          /* 在switch语句中报告失败情况的错误。 */</span>
+<span class="hljs-comment">// &quot;noUncheckedIndexedAccess&quot;: true,            /* 在索引签名结果中包含“未定义” */</span>
+<span class="hljs-comment">/* 模块分辨率选项 */</span>
+<span class="hljs-comment">// &quot;moduleResolution&quot;: &quot;node&quot;,                  /* 指定模块解析策略：“节点”（Node.js）或“经典”（TypeScript 1.6之前的版本）。 */</span>
+<span class="hljs-comment">// &quot;baseUrl&quot;: &quot;./&quot;,                             /* 用于解析非绝对模块名称的基本目录。 */</span>
+<span class="hljs-comment">// &quot;paths&quot;: {},                                 /* 一系列条目，这些条目将导入重新映射到相对于&#x27;baseUrl&#x27;的查找位置。 */</span>
+<span class="hljs-comment">// &quot;rootDirs&quot;: [],                              /* 根目录列表，其组合内容表示运行时项目的结构。 */</span>
+<span class="hljs-comment">// &quot;typeRoots&quot;: [],                             /* 包含类型定义的文件夹列表。 */</span>
+<span class="hljs-comment">// &quot;types&quot;: [],                                 /* 键入要包含在编译中的声明文件。 */</span>
+<span class="hljs-comment">// &quot;allowSyntheticDefaultImports&quot;: true,        /* 允许从模块进行默认导入，而没有默认导出。这不影响代码发出，仅影响类型检查。 */</span>
+<span class="hljs-comment">// &quot;esModuleInterop&quot;: true,                     /* 通过为所有导入创建名称空间对象来启用CommonJS和ES模块之间的发射互操作性。暗示“ allowSyntheticDefaultImports”。 */</span>
+<span class="hljs-comment">// &quot;preserveSymlinks&quot;: true,                    /* 不要解析符号链接的真实路径。 */</span>
+<span class="hljs-comment">// &quot;allowUmdGlobalAccess&quot;: true,                /* 允许从模块访问UMD全局变量。 */</span>
+<span class="hljs-comment">/* 源映射选项*/</span>
+<span class="hljs-comment">// &quot;sourceRoot&quot;: &quot;&quot;,                            /* 指定调试器应在其中定位TypeScript文件的位置，而不是源位置。 */</span>
+<span class="hljs-comment">// &quot;mapRoot&quot;: &quot;&quot;,                               /* 指定调试器应定位地图文件的位置，而不是生成的位置。 */</span>
+<span class="hljs-comment">// &quot;inlineSourceMap&quot;: true,                     /* 发出带有源映射的单个文件，而不是具有单独的文件。 */</span>
+<span class="hljs-comment">// &quot;inlineSources&quot;: true,                       /* 在单个文件中将源代码与源映射一起发射；需要设置“ --inlineSourceMap”或“ --sourceMap”。 */</span>
+<span class="hljs-comment">/* 实验选项 */</span>
+<span class="hljs-comment">// &quot;experimentalDecorators&quot;: true,              /* 为ES7装饰器启用实验性支持。 */</span>
+<span class="hljs-comment">// &quot;emitDecoratorMetadata&quot;: true,               /* 为发布装饰器的类型元数据启用实验性支持。 */</span>
+<span class="hljs-comment">/* 高级选项 */</span>
+<span class="hljs-comment">// &quot;skipLibCheck&quot;: true,                        /* 跳过声明文件的类型检查。 */</span>
+<span class="hljs-comment">// &quot;forceConsistentCasingInFileNames&quot;: true     /* 禁止对同一文件使用大小写不一致的引用。 */</span>
+<span class="hljs-comment">//     }</span>
+<span class="hljs-comment">// }</span>
+</code></pre>
+</div>
+        
+      </div>
+    </div>
+  </body>
+</html>
