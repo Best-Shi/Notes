@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>Best Shi</title>
+    <title>nvm 安装与配置</title>
     <link rel="stylesheet" href="e9fe0adf-8d82-4a49-93de-55e201fe578a.css" />
   </head>
   <body>
@@ -98,7 +98,7 @@
                 
                   <a
                     id="764294c3-4190-4421-aedc-bf4e2d9d8341"
-                    class="menu-item"
+                    class="menu-active"
                     href="764294c3-4190-4421-aedc-bf4e2d9d8341.html "
                   >
                     nvm 安装与配置
@@ -520,9 +520,21 @@
       </div>
       <div class="content">
         
-        <div class="index">
-          <h3 >Best Shi 书屋</h3>
-        </div>
+        <div><h1 id="nvm-安装与配置">nvm 安装与配置</h1>
+<p><a href="https://github.com/nvm-sh/nvm">nvm-sh</a></p>
+<h2 id="安装-nvm">安装 nvm</h2>
+<pre><code class="hljs language-bash">wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+</code></pre>
+<h2 id="切换-node-源刷新配置文件">切换 node 源刷新配置文件</h2>
+<ul>
+<li>zsh</li>
+</ul>
+<pre><code class="hljs language-bash"><span class="hljs-comment"># 切换 node 淘宝源</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node/&quot;</span> &gt;&gt; ~/.zshrc
+<span class="hljs-comment"># 刷新配置</span>
+<span class="hljs-built_in">source</span> ~/.zshrc
+</code></pre>
+</div>
         
       </div>
     </div>

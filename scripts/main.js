@@ -78,7 +78,7 @@ console.log('复制公共文件。。。');
 // 复制公共文件
 copyFileSync(
   resolve(templatePath, 'style.css'),
-  resolve(buildPath, `style.css`),
+  resolve(buildPath, `${styleName}.css`),
 );
 copyFileSync(
   resolve(templatePath, 'favicon.ico'),

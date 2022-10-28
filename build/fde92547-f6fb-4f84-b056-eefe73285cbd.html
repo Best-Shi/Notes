@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>Best Shi</title>
+    <title>powershell 命令</title>
     <link rel="stylesheet" href="e9fe0adf-8d82-4a49-93de-55e201fe578a.css" />
   </head>
   <body>
@@ -214,7 +214,7 @@
                 
                   <a
                     id="fde92547-f6fb-4f84-b056-eefe73285cbd"
-                    class="menu-item"
+                    class="menu-active"
                     href="fde92547-f6fb-4f84-b056-eefe73285cbd.html "
                   >
                     powershell 命令
@@ -520,9 +520,48 @@
       </div>
       <div class="content">
         
-        <div class="index">
-          <h3 >Best Shi 书屋</h3>
-        </div>
+        <div><h1 id="powershell-命令">PowerShell 命令</h1>
+<h2 id="查找命令">查找命令</h2>
+<p>Get-Command：Get-Command cmdlet 列出系统上的所有可用 cmdlet。 筛选列表以快速找到所需的命令。</p>
+<ul>
+<li><code>-Noun</code>: 查看与 <code>-</code> 后面匹配的命令。</li>
+<li><code>-Verb</code>: 查看与 <code>-</code> 前面匹配的命令。</li>
+</ul>
+<pre><code class="hljs language-powershell">  <span class="hljs-built_in">Get-Command</span> <span class="hljs-literal">-Noun</span> File*
+</code></pre>
+<h2 id="帮助命令">帮助命令</h2>
+<p>Get-Help：运行 Get-Help 核心 cmdlet，以调用内置帮助系统。 或者使用别名 help 命令来调用 Get-Help，但通过对响应进行分页来改善读取体验。</p>
+<pre><code class="hljs language-powershell"><span class="hljs-built_in">Get-Help</span> <span class="hljs-built_in">Get-FileHash</span> <span class="hljs-literal">-Examples</span>
+</code></pre>
+<ul>
+<li>更新帮助文档</li>
+</ul>
+<pre><code class="hljs language-powershell"><span class="hljs-built_in">Update-Help</span> <span class="hljs-literal">-UICulture</span> en<span class="hljs-literal">-US</span> <span class="hljs-literal">-Verbose</span>
+</code></pre>
+<p><code>-UICulture </code>标志。 它为该标志提供值 <code>en-US</code>，这将提取英语帮助文件。</p>
+<ul>
+<li><p>帮助文档说明：</p>
+<ul>
+<li>NAME：提供命令的名称。</li>
+<li>SYNTAX：介绍如何通过使用标志组合（有时还可使用允许的参数）来调用命。</li>
+<li>ALIASES：列出了命令的所有别名。 别名是命令的不同名称，可用于调用命。</li>
+<li>REMARKS：提供有关要运行的命令的信息，以获取有关此命令的更多帮助。</li>
+<li>PARAMETERS：提供有关参数的详细信息。 包括参数的类型、较长的说明和可接受的值（如果适用）。</li>
+</ul>
+</li>
+<li><p>帮助文档筛选：</p>
+<ul>
+<li>Full：返回详细的帮助页面。 它指定了无法从标准响应中获取的参数、输入和输出等信息。</li>
+<li>Detailed：返回与标准响应类似、但包含参数部分的响应。</li>
+<li>Examples：仅返回示例（如果存在）。</li>
+<li>Online：为命令打开一个网页。</li>
+<li>Parameter：需要形参名称作为实参。 它列出特定参数的属性。</li>
+</ul>
+</li>
+<li><p>Get-Member：调用命令时，响应是包含多个属性的对象。 运行 Get-Member 核心 cmdlet 向下钻取到该响应并了解其详细信息。</p>
+</li>
+</ul>
+</div>
         
       </div>
     </div>

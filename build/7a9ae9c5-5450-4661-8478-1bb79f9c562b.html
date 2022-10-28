@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>Best Shi</title>
+    <title>Nginx安装</title>
     <link rel="stylesheet" href="e9fe0adf-8d82-4a49-93de-55e201fe578a.css" />
   </head>
   <body>
@@ -166,7 +166,7 @@
                 
                   <a
                     id="7a9ae9c5-5450-4661-8478-1bb79f9c562b"
-                    class="menu-item"
+                    class="menu-active"
                     href="7a9ae9c5-5450-4661-8478-1bb79f9c562b.html "
                   >
                     Nginx安装
@@ -520,9 +520,142 @@
       </div>
       <div class="content">
         
-        <div class="index">
-          <h3 >Best Shi 书屋</h3>
-        </div>
+        <div><h1 id="nginx-安装">Nginx 安装</h1>
+<blockquote>
+<ul>
+<li>操作系统版本：CentOS Linux release 7.9.2009 (Core)</li>
+<li>Nginx 版本：nginx-1.23.1.tar.gz</li>
+</ul>
+</blockquote>
+<h2 id="nginx-常用版本">Nginx 常用版本</h2>
+<ul>
+<li><a href="http://nginx.org/">Nginx 开源版</a></li>
+<li><a href="https://www.nginx.com">Nginx plus 商业版</a></li>
+<li><a href="http://openresty.org/cn/">openresty</a></li>
+<li><a href="http://tengine.taobao.org/">tengine</a></li>
+</ul>
+<h2 id="解压">解压</h2>
+<pre><code class="hljs language-bash">tar -zxvf nginx-1.23.1.tar.gz
+</code></pre>
+<h2 id="编译安装">编译安装</h2>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">cd</span> nginx-1.23.1
+./configure --prefix=/usr/local/nginx
+make
+make install
+</code></pre>
+<h3 id="报错处理">报错处理</h3>
+<ul>
+<li>缺少 gcc 编译器</li>
+</ul>
+<pre><code class="hljs language-bash">checking <span class="hljs-keyword">for</span> OS
+ + Linux 3.10.0-1160.el7.x86_64 x86_64
+checking <span class="hljs-keyword">for</span> C compiler ... not found
+
+./configure: error: C compiler cc is not found
+</code></pre>
+<p>安装 gcc</p>
+<pre><code class="hljs language-bash">yum install -y gcc
+</code></pre>
+<ul>
+<li>缺少 pcre 库</li>
+</ul>
+<pre><code class="hljs language-bash">./configure: error: the HTTP rewrite module requires the PCRE library.
+You can either <span class="hljs-built_in">disable</span> the module by using --without-http_rewrite_module
+option, or install the PCRE library into the system, or build the PCRE library
+statically from the <span class="hljs-built_in">source</span> with nginx by using --with-pcre=&lt;path&gt; option.
+</code></pre>
+<p>安装 pcre 库</p>
+<pre><code class="hljs language-bash">yum install -y pcre pcre-devel
+</code></pre>
+<ul>
+<li>缺少 zlib 库</li>
+</ul>
+<pre><code class="hljs language-bash">./configure: error: the HTTP gzip module requires the zlib library.
+You can either <span class="hljs-built_in">disable</span> the module by using --without-http_gzip_module
+option, or install the zlib library into the system, or build the zlib library
+statically from the <span class="hljs-built_in">source</span> with nginx by using --with-zlib=&lt;path&gt; option.
+</code></pre>
+<p>安装 zlib 库</p>
+<pre><code class="hljs language-bash">yum install -y zlib zlib-devel
+</code></pre>
+<h2 id="启动-nginx">启动 Nginx</h2>
+<p>进入安装好的目录 <code>/usr/local/nginx/sbin</code></p>
+<pre><code class="hljs language-bash"><span class="hljs-comment"># 启动</span>
+./nginx
+
+<span class="hljs-comment"># 快速停止</span>
+./nginx -s stop
+
+<span class="hljs-comment"># 在退出前完成已接受的链接请求</span>
+./nginx -s quit
+
+<span class="hljs-comment"># 重新加载配置</span>
+./nginx -s reload
+</code></pre>
+<h2 id="关于防火墙">关于防火墙</h2>
+<p>测试时建议使用方式一。</p>
+<ul>
+<li>方式一：</li>
+</ul>
+<pre><code class="hljs language-bash"><span class="hljs-comment"># 关闭防火墙</span>
+systemctl stop firewalld.service
+
+<span class="hljs-comment"># 禁止防火墙开机启动</span>
+systemctl <span class="hljs-built_in">disable</span> firewalld.service
+</code></pre>
+<ul>
+<li>方式二：</li>
+</ul>
+<pre><code class="hljs language-bash"><span class="hljs-comment"># 放行端口</span>
+firewall-cmd --zone=public --add-port=80/tcp --permanent
+
+<span class="hljs-comment"># 移除放行端口</span>
+firewall-cmd --zone=public --remove-port=80/tcp --permanent
+
+<span class="hljs-comment"># 重启防火墙</span>
+firewall-cmd --reload
+</code></pre>
+<h2 id="添加-nginx-为系统服务">添加 Nginx 为系统服务</h2>
+<ul>
+<li>创建服务脚本</li>
+</ul>
+<pre><code class="hljs language-bash">vi /usr/lib/systemd/system/nginx.service
+</code></pre>
+<p>脚本内容</p>
+<pre><code class="hljs language-bash">[Unit]
+Description=nginx - web server
+After=network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=forking
+PIDFile=/usr/local/nginx/logs/nginx.pid
+ExecStartPre=/usr/local/nginx/sbin/nginx -t -c /usr/local/nginx/conf/nginx.conf
+ExecStart=/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+ExecReload=/usr/local/nginx/sbin/nginx -s reload
+ExecStop=/usr/local/nginx/sbin/nginx -s stop
+ExecQuit=/usr/local/nginx/sbin/nginx -s quit
+PrivateTmp=<span class="hljs-literal">true</span>
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+<p><strong>注意：</strong> <code>/usr/local/nginx/</code>为 Nginx 安装目录。</p>
+<ul>
+<li>重新加载系统服务</li>
+</ul>
+<pre><code class="hljs language-bash">systemctl daemon-reload
+</code></pre>
+<ul>
+<li>启动服务</li>
+</ul>
+<pre><code class="hljs language-bash">systemctl start nginx.service
+</code></pre>
+<ul>
+<li>设置开机启动</li>
+</ul>
+<pre><code class="hljs language-bash">systemctl <span class="hljs-built_in">enable</span> nginx.service
+</code></pre>
+</div>
         
       </div>
     </div>
