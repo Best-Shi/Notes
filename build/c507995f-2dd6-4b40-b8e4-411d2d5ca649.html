@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>Best Shi</title>
+    <title>Git 学习</title>
     <link rel="stylesheet" href="9f07d3f1-154d-4280-9f14-4792342d1c66.css" />
   </head>
   <body>
@@ -20,7 +20,7 @@
                 
                   <a
                     id="c507995f-2dd6-4b40-b8e4-411d2d5ca649"
-                    class="menu-item"
+                    class="menu-active"
                     href="c507995f-2dd6-4b40-b8e4-411d2d5ca649.html "
                   >
                     Git 学习
@@ -520,9 +520,69 @@
       </div>
       <div class="content">
         
-        <div class="index">
-          <h3 >Best Shi 书屋</h3>
-        </div>
+        <div><h1 id="git-学习">Git 学习</h1>
+<h2 id="配置用户名和邮箱">配置用户名和邮箱</h2>
+<pre><code class="hljs language-bash">git config --global user.name <span class="hljs-string">&quot;Best Shi&quot;</span>
+git config --global user.email <span class="hljs-string">&quot;bestshi.com@gmail.com&quot;</span>
+
+<span class="hljs-comment"># 查看配置</span>
+git config --list
+</code></pre>
+<h2 id="初始化仓库">初始化仓库</h2>
+<pre><code class="hljs language-bash"><span class="hljs-comment"># Git 版本 &gt;= 2.28.0</span>
+git init --initial-branch=main
+<span class="hljs-comment"># or</span>
+git init -b main
+
+<span class="hljs-comment"># 早期版本</span>
+git init
+git checkout -b main
+</code></pre>
+<h2 id="git-基本命令">Git 基本命令</h2>
+<ul>
+<li>git status: 显示工作树的状态（以及暂存区域的状态）。<ul>
+<li>人们常常对“Git 不将添加空目录视为更改”感到惊讶。 这是因为 Git 只跟踪对文件（而非目录）的更改。</li>
+<li>有时，特别是在开发的初始阶段，你需要将空目录作为占位符。 常见的约定是在占位符目录中创建一个空文件，通常名为“.git-keep”。</li>
+</ul>
+</li>
+<li>git add: 命令用于指示 Git 开始跟踪某些文件中的更改。</li>
+<li>git commit: 暂存要提交的某些更改后，可以通过调用 git commit 命令将工作保存到快照。<ul>
+<li><code>--amend</code>: 修改最近一次的提交。</li>
+</ul>
+</li>
+<li>git log: 可查看先前提交的相关信息。<ul>
+<li><code>--oneline</code>: 单行显示。</li>
+<li><code>-nX</code>: 其中 X 是提交编号：1 是最近的提交，2 是其之前的提交，以此类推。</li>
+</ul>
+</li>
+<li>git help: 获取帮助。</li>
+<li>git diff: 查看更改的内容。加号出现在已添加行的前面，而减号指示已删除的行。<ul>
+<li>默认操作是使用 git diff 将工作树与索引进行比较。 它会显示尚未暂存（添加到 Git 的索引中）的所有更改。</li>
+<li>若要将工作树与上次提交进行比较，可以使用 git diff HEAD。</li>
+<li>可以使用 git diff HEAD^ 命令来比较最新提交和先前提交之间的差异。</li>
+</ul>
+</li>
+<li>git rm: 删除文件。 此命令不仅会删除磁盘上的文件，还会让 Git 在索引中记录文件删除。</li>
+<li>git reset: 从 Git 取消对文件删除的暂存。</li>
+<li>git revert: 还原先前的提交。 其工作原理是：执行取消第一个提交的另一个提交。<ul>
+<li><code>git revert HEAD</code>: 执行与上次提交完全相反的提交，撤消上次提交，同时保留所有历史记录。</li>
+<li><code>--mixed</code>: 默认类型，它会重置索引，但不会重置工作树；如果指定其他提交，它也会移动 HEAD。</li>
+<li><code>--soft</code>: 选项仅移动 HEAD，且保持索引和工作树不变。 此选项会像 git status 那样，将所有更改保留为“待提交更改”。</li>
+<li><code>--hard</code>: 重置会同时更改索引和工作树以匹配指定的提交；对跟踪文件所做的所有更改都会被丢弃。</li>
+<li><code>--no-edit</code>: 告诉 Git 我们不需要为此操作添加提交消息。</li>
+</ul>
+</li>
+<li>git clone: 克隆存储库。<ul>
+<li>当 Git 克隆某个存储库时，它将使用名称 origin 创建对称为“远程”的原始存储库的引用。</li>
+<li>它会设置克隆存储库，使克隆存储库从远程存储库拉取或检索数据。</li>
+</ul>
+</li>
+<li>git pull: 将更改从远程存储库复制到本地存储库。<ul>
+<li>git pull 命令非常高效，因为它只复制新的提交和对象，然后将它们签入到工作树中。</li>
+</ul>
+</li>
+</ul>
+</div>
         
       </div>
     </div>

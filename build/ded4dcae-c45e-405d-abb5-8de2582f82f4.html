@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>Best Shi</title>
+    <title>vue3快速上手</title>
     <link rel="stylesheet" href="9f07d3f1-154d-4280-9f14-4792342d1c66.css" />
   </head>
   <body>
@@ -340,7 +340,7 @@
                 
                   <a
                     id="ded4dcae-c45e-405d-abb5-8de2582f82f4"
-                    class="menu-item"
+                    class="menu-active"
                     href="ded4dcae-c45e-405d-abb5-8de2582f82f4.html "
                   >
                     vue3快速上手
@@ -520,9 +520,94 @@
       </div>
       <div class="content">
         
-        <div class="index">
-          <h3 >Best Shi 书屋</h3>
-        </div>
+        <div><h1 id="认识-vue3">认识 Vue3</h1>
+<h2 id="1、了解相关信息">1、了解相关信息</h2>
+<ul>
+<li>Vue.js 3.0 &quot;One Piece&quot; 正式版在今年 9 月份发布</li>
+<li>2 年多开发, 100+位贡献者, 2600+次提交, 600+次 PR</li>
+<li>Vue3 支持 vue2 的大多数特性</li>
+<li>更好的支持 Typescript</li>
+</ul>
+<h2 id="2、性能提升">2、性能提升:</h2>
+<ul>
+<li>打包大小减少 41%</li>
+<li>初次渲染快 55%, 更新渲染快 133%</li>
+<li>内存减少 54%</li>
+<li>使用 Proxy 代替 defineProperty 实现数据响应式</li>
+<li>重写虚拟 DOM 的实现和 Tree-Shaking</li>
+</ul>
+<h2 id="3、新增特性">3、新增特性</h2>
+<ul>
+<li><p>Composition (组合) API</p>
+</li>
+<li><p>setup</p>
+<ul>
+<li>ref 和 reactive</li>
+<li>computed 和 watch</li>
+<li>新的生命周期函数</li>
+<li>provide 与 inject</li>
+<li>...</li>
+</ul>
+</li>
+<li><p>新组件</p>
+<ul>
+<li>Fragment - 文档碎片</li>
+<li>Teleport - 瞬移组件的位置</li>
+<li>Suspense - 异步加载组件的 loading 界面</li>
+</ul>
+</li>
+<li><p>其它 API 更新</p>
+<ul>
+<li>全局 API 的修改</li>
+<li>将原来的全局 API 转移到应用对象</li>
+<li>模板语法变化</li>
+</ul>
+</li>
+</ul>
+<h2 id="创建-vue3-项目">创建 vue3 项目</h2>
+<h2 id="1、使用-vue-cli-创建">1、使用 vue-cli 创建</h2>
+<p><a href="https://cli.vuejs.org/zh/guide/creating-a-project.html#vue-create">文档地址</a></p>
+<pre><code class="hljs language-shell"><span class="hljs-meta prompt_">#</span><span class="language-bash"><span class="hljs-comment"># 安装或者升级</span></span>
+npm install -g @vue/cli
+<span class="hljs-meta prompt_">#</span><span class="language-bash"><span class="hljs-comment"># 保证 vue cli 版本在 4.5.0 以上</span></span>
+vue --version
+<span class="hljs-meta prompt_">#</span><span class="language-bash"><span class="hljs-comment"># 创建项目</span></span>
+vue create my-project
+</code></pre>
+<p><strong>然后的步骤</strong></p>
+<ul>
+<li>Please pick a preset - 选择 Manually select features</li>
+<li>Check the features needed for your project - 选择上 TypeScript ，特别注意点空格是选择，点回车是下一步</li>
+<li>Choose a version of Vue.js that you want to start the project with - 选择 3.x - (Preview)</li>
+<li>Use class-style component syntax - 直接回车</li>
+<li>Use Babel alongside TypeScript - 直接回车</li>
+<li>Pick a linter / formatter config - 直接回车</li>
+<li>Use history mode for router? - 直接回车</li>
+<li>Pick a linter / formatter config - 直接回车</li>
+<li>Pick additional lint features - 直接回车</li>
+<li>Where do you prefer placing config for Babel, ESLint, etc.? - 直接回车</li>
+<li>Save this as a preset for future projects? - 直接回车</li>
+</ul>
+<h2 id="2、使用-vite-创建">2、使用 vite 创建</h2>
+<ul>
+<li><p><a href="https://v3.cn.vuejs.org/guide/installation.html">文档地址</a></p>
+</li>
+<li><p>vite 是一个由原生 ESM 驱动的 Web 开发构建工具。在开发环境下基于浏览器原生 ES imports 开发，</p>
+</li>
+<li><p>它做到了**<em>本地快速开发启动</em>**, 在生产环境下基于 Rollup 打包。</p>
+<ul>
+<li>快速的冷启动，不需要等待打包操作；</li>
+<li>即时的热模块更新，替换性能和模块数量的解耦让更新飞起；</li>
+<li>真正的按需编译，不再等待整个应用编译完成，这是一个巨大的改变。</li>
+</ul>
+</li>
+</ul>
+<pre><code class="hljs language-shell">npm init vite-app &lt;project-name&gt;
+cd &lt;project-name&gt;
+npm install
+npm run dev
+</code></pre>
+</div>
         
       </div>
     </div>

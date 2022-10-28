@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>Best Shi</title>
+    <title>oh-my-zsh 安装与配置</title>
     <link rel="stylesheet" href="9f07d3f1-154d-4280-9f14-4792342d1c66.css" />
   </head>
   <body>
@@ -108,7 +108,7 @@
                 
                   <a
                     id="ce9d6243-9219-49b4-af4d-ec978e349e13"
-                    class="menu-item"
+                    class="menu-active"
                     href="ce9d6243-9219-49b4-af4d-ec978e349e13.html "
                   >
                     oh-my-zsh 安装与配置
@@ -520,9 +520,71 @@
       </div>
       <div class="content">
         
-        <div class="index">
-          <h3 >Best Shi 书屋</h3>
-        </div>
+        <div><h1 id="oh-my-zsh-安装与配置">oh-my-zsh 安装与配置</h1>
+<h2 id="安装-zsh">安装 zsh</h2>
+<ul>
+<li>Ubuntu<pre><code class="hljs language-bash">sudo apt install zsh
+</code></pre>
+</li>
+</ul>
+<h2 id="切换-zsh">切换 zsh</h2>
+<ul>
+<li><p>查看终端有那些 shell</p>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">cat</span> /etc/shells
+</code></pre>
+</li>
+<li><p>切换到 zsh</p>
+<pre><code class="hljs language-bash">chsh -s /bin/zsh
+</code></pre>
+</li>
+</ul>
+<h2 id="安装-oh-my-zsh">安装 oh-my-zsh</h2>
+<p><a href="https://ohmyz.sh/">oh-my-zhs</a></p>
+<pre><code class="hljs language-bash">sh -c <span class="hljs-string">&quot;<span class="hljs-subst">$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)</span>&quot;</span>
+</code></pre>
+<h2 id="控制台报错">控制台报错</h2>
+<pre><code class="hljs language-bash">curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused
+</code></pre>
+<p>这是由于 DNS 污染造成的，可以在本地添加 Host 解析规则：</p>
+<pre><code class="hljs language-bash"><span class="hljs-comment"># /etc/hosts</span>
+199.232.68.133 raw.githubusercontent.com
+199.232.68.133 user-images.githubusercontent.com
+199.232.68.133 avatars2.githubusercontent.com
+199.232.68.133 avatars1.githubusercontent.com
+</code></pre>
+<h2 id="安装-powerlevel10k">安装 powerlevel10k</h2>
+<p><a href="https://github.com/romkatv/powerlevel10k">powerlevel10k</a></p>
+<pre><code class="hljs language-bash">git <span class="hljs-built_in">clone</span> --depth=1 https://gitee.com/romkatv/powerlevel10k.git ~/powerlevel10k
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&#x27;source ~/powerlevel10k/powerlevel10k.zsh-theme&#x27;</span> &gt;&gt;~/.zshrc
+</code></pre>
+<h2 id="安装字体">安装字体</h2>
+<h3 id="下载字体">下载字体</h3>
+<p><a href="https://github.com/source-foundry/Hack">Hack</a></p>
+<pre><code class="hljs language-bash">wget https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-webfonts.tar.gz
+</code></pre>
+<h3 id="解压字体">解压字体</h3>
+<pre><code class="hljs language-bash">tar -xvf Hack-v3.003-ttf.tar.xz
+</code></pre>
+<p><strong>注：</strong> 字体通常安装在<code>/usr/share/fonts/</code>字体目录中，或者安装在以下目录中：<code>~/.local/share/fonts/</code>或<code>/usr/local/share/fonts</code>。</p>
+<h3 id="创建目录移动字体">创建目录移动字体</h3>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">mkdir</span> -p ~/.local/share/fonts
+<span class="hljs-built_in">mv</span> Hack-*.ttf ~/.local/share/fonts
+</code></pre>
+<h3 id="重新生成字体缓存">重新生成字体缓存</h3>
+<pre><code class="hljs language-bash">fc-cache -f -v
+</code></pre>
+<h3 id="检测字体是否安装成功">检测字体是否安装成功</h3>
+<pre><code class="hljs language-bash">fc-list |grep <span class="hljs-string">&quot;Hack&quot;</span>
+</code></pre>
+<h3 id="删除字体">删除字体</h3>
+<p>先删除字体文件，然后重新生成字体缓存。</p>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">rm</span> -rf ~/.local/share/fonts/Hack-*.ttf
+fc-cache -f -v
+</code></pre>
+<h2 id="修改终端默认字体">修改终端默认字体</h2>
+<h2 id="配置-powerlevel10k">配置 powerlevel10k</h2>
+<p>配置命令：<code>10k configure</code></p>
+</div>
         
       </div>
     </div>
