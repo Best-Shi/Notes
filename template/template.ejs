@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title><%- title %></title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="<%= styleName %>.css" />
   </head>
   <body>
     <div class="container">
@@ -44,7 +44,9 @@
         <% if(content) { %>
         <div><%- content %></div>
         <% } else { %>
-        <h2>aaaa</h2>
+        <div class="index">
+          <h3 >Best Shi 书屋</h3>
+        </div>
         <% } %>
       </div>
     </div>

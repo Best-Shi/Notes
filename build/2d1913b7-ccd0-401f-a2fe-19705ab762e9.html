@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>Best Shi</title>
+    <title>Windows Terminal设置代理</title>
     <link rel="stylesheet" href="fc4af8f8-9bf8-4535-b662-7caea4bacc08.css" />
   </head>
   <body>
@@ -408,7 +408,7 @@
                 
                   <a
                     id="2d1913b7-ccd0-401f-a2fe-19705ab762e9"
-                    class="menu-item"
+                    class="menu-active"
                     href="2d1913b7-ccd0-401f-a2fe-19705ab762e9.html "
                   >
                     Windows Terminal设置代理
@@ -520,9 +520,20 @@
       </div>
       <div class="content">
         
-        <div class="index">
-          <h3 >Best Shi 书屋</h3>
-        </div>
+        <div><h1 id="windows-terminal设置代理">Windows Terminal设置代理</h1>
+<h2 id="powershell--cmd">powershell &amp; cmd</h2>
+<p>​	set http_proxy=<a href="http://127.0.0.1:10809">http://127.0.0.1:10809</a>
+​	set https_proxy=<a href="http://127.0.0.1:10809">http://127.0.0.1:10809</a>
+​	</p>
+<pre><code>启动自动设置代理
+     -NoExit -c &#x27;set http_proxy=http://127.0.0.1:10809&#x27;;&#x27;set https_proxy=http://127.0.0.1:10809&#x27;
+</code></pre>
+<h2 id="wls2linux子系统">wls2(Linux子系统)</h2>
+<p>​	export http_proxy=<a href="http://127.0.0.1:10809">http://127.0.0.1:10809</a>
+​	export https_proxy=<a href="http://127.0.0.1:10809">http://127.0.0.1:10809</a>
+​	
+10809 为本机设置的代理端口</p>
+</div>
         
       </div>
     </div>

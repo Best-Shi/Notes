@@ -14,11 +14,13 @@ import ejs from 'ejs';
 
 import { getFileInfo } from './getFileInfo.js';
 import { pushAliOSS } from './pushAliOSS.js';
+import { randomUUID } from 'node:crypto';
 
 const basePath = process.cwd();
 const docPath = resolve(basePath, 'doc');
 const buildPath = resolve(basePath, 'build');
 const templatePath = resolve(basePath, 'template');
+const styleName = randomUUID();
 
 // 清空build目录
 await rmSync(buildPath, { recursive: true, force: true });
@@ -55,6 +57,7 @@ for (let i = 0; i < fileList.length; i++) {
     content: html,
     nav: fileTree.children,
     activeId: fileInfo.id,
+    styleName,
   });
 
   // 写入文件
@@ -67,6 +70,7 @@ const ejsFile = ejs.render(template, {
   content: '',
   nav: fileTree.children,
   activeId: '',
+  styleName,
 });
 await writeFileSync(resolve(buildPath, `index.html`), ejsFile);
 
